@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Moira</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div>
+        <div>
+            <img src="./sources/icesi-brand.svg">
+            <form id="register" class="auth">
+                
+                <fieldset>
+                    <img src="./sources/moira-brand.svg">
+                        <label class="formlabel">Nombres</label>
+                        <input type="text" placeholder="Nombres" name="name">
+                        <label class="formlabel">Apellidos</label>
+                        <input type="text" placeholder="Apellidos" name="lastname">
+                        <label class="formlabel">Código</label>
+                        <input type="text" placeholder="Código" name="code">
+                        <label class="formlabel">Universidad</label>
+                        <select name="university" >
+                            <option value="1">Universidad Icesi</option>
+                            <option value="2">Otra Universidad</option>
+                        </select>
+                        <input type="button" value="Siguiente">
+                </fieldset>
+                <img src="./sources/image-register.png">
+                <fieldset>
+                    <img src="./sources/moira-brand.svg">
+                    
+                        <label class="formlabel">Tipo de persona</label>
+                        <select name="person">
+                            <option value="1">Estudiante</option>
+                            <option value="2">Colaborador (diferente a profesor(a))</option>
+                            <option value="3">Profesora o Profesor</option>
+                        </select>
+                        <label class="formlabel">Celular</label>
+                        <input type="text" placeholder="Celular" name="celphone">
+                        <label class="formlabel">¿Cómo conoció MOIRA Digital</label>
+                        <select name="datamoira">
+                            <option value="1">Redes sociales</option>
+                            <option value="2">Profesora o profesor</option>
+                            <option value="3">Charla institucional</option>
+                            <option value="4">Otro</option>
+                        </select>
+                        <label class="formlabel">Correo electrónico</label>
+                        <input type="email" placeholder="Correo electrónico" name="email">
+                        <label class="formlabel">Contraseña</label>
+                        <input type="password" placeholder="Contraseña" name="password">
+                        <input type="button" value="Regresar">
+                        <input type="submit" value="Siguiente">
+                </fieldset>
+                <img src="./sources/image-register2.png">
+            </form>
+        </div>
+       
+    </div>
+    <script src="./js/utils.js"></script>
+    <script type="module" src="./js/auth.js"></script>
+</body>
+</html>
