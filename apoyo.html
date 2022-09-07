@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apoyo</title>
+    <title>Apoyo Ruta Moira</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -75,44 +75,65 @@
                 <img src="./sources/moira-brand.svg">
             </div>
             <div>
-                <label class="formlabel">Tipo de persona</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
+                <label class="formlabel">Identidad de Género</label>
+                <select name="identity">
+                    <option value="1">Mujer</option>
+                    <option value="2">Hombre</option>
+                    <option value="3">Queer</option>
+                    <option value="4">Otro</option>
+                    <option value="5">Prefiero no decirlo</option>
                 </select>
-                <label class="formlabel">Tipo de persona</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
+
+
+                <label class="formlabel">Orientación sexual</label>
+                <select name="orientation">
+                    <option value="1">Heterosexual</option>
+                    <option value="2">Bisexual</option>
+                    <option value="3">Homosexual</option>
+                    <option value="3">Asexual</option>
+                    <option value="3">Pansexual</option>
+                    <option value="3">Otro</option>
+                    <option value="3">Prefiero no decirlo</option>
                 </select>
-                <label class="formlabel">Tipo de persona</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
+              
+
+                <label class="formlabel">Pronombres de preferencia</label>
+                <select name="pronouns">
+                    <option value="1">Él</option>
+                    <option value="2">Ella</option>
+                    <option value="3">Elle</option>
                 </select>
-                <label class="formlabel">Nombres</label>
-                <input type="text" placeholder="Nombres" name="name">
-                <label class="formlabel">Tipo de persona</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
+
+
+                <label class="formlabel">Apodo o nombre de preferencia</label>
+                <input type="text" placeholder="Nombre de preferencia" name="nickname">
+
+
+                <label class="formlabel">¿Por qué medio desea ser contactadx?</label>
+                <select name="contact">
+                    <option value="1">Celular</option>
+                    <option value="2">Correo</option>
+                    <option value="3">No deseo ser contactadx</option>
                 </select>
-                <label class="formlabel">Tipo de persona</label>
+
+
+                <label class="formlabel">¿Presenta alguna diversidad funcional?</label>
                 <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
+                    <option value="1">Diversidad Motriz</option>
+                    <option value="2">Diversidad Auditiva</option>
+                    <option value="3">Diversidad visual</option>
+                    <option value="4">Diversidad Cognitiva</option>
+                    <option value="5">Diversidad Mental</option>
                 </select>
-                <label class="formlabel">Tipo de persona</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
+
+
+                <label class="formlabel">¿Desea asistencia por parte de alguno de nuestros psicólogos?</label>
+                <select name="helppsico">
+                    <option value="1">Sí</option>
+                    <option value="2">No</option>
                 </select>
+
+            
                 <input type="button" value="Regresar">
                 <input type="button" value="Siguiente">
             </div>
@@ -124,76 +145,86 @@
             </div>
             <div>
                 <label class="formlabel">Nombres</label>
-                <input type="text" placeholder="Nombres" name="name">
+                <input type="text" placeholder="Nombres" name="name-a">
+              
                 <label class="formlabel">Apellidos</label>
-                <input type="text" placeholder="Apellidos" name="lastname">
-                <label class="formlabel">Tipo de persona</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
-                </select>
-                <label class="formlabel">Nombres</label>
-                <input type="text" placeholder="Nombres" name="name">
-                <label class="formlabel">Tipo de persona</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
-                </select>
-                <label class="formlabel">Apellidos</label>
-                <input type="text" placeholder="Apellidos" name="lastname">
-                <label class="formlabel">Correo electrónico</label>
-                <input type="email" placeholder="Correo electrónico" name="email">
-                <label class="formlabel">Observaciones o datos adicionales</label>
-                <textarea placeholder="Narrar caracteristicas físicas o datos relevantes del agresor" name="observations">
-                <input type="button" value="Regresar">
-                <input type="button" value="Siguiente">
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <div>
-                <img src="./sources/moira-brand.svg">
-            </div>
-            <div>
-                <label class="formlabel">Fecha de nacimiento</label>
-                <input type="date" placeholder="DD/MM/AAAA" name="borndate">
-                <label class="formlabel">Hora de los hechos</label>
-                <input type="time">
-                <label class="formlabel">Tipo de persona</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
-                </select>
-                <label class="formlabel">Lugar de los hechos</label>
-                <input type="text" placeholder="Lugar" name="place">
-                <label class="formlabel">¿Se utilizó alguna arma?</label>
-                <select name="person">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
-                </select>
-                <label class="formlabel">Observaciones o datos adicionales</label>
-                <textarea placeholder="Narrar caracteristicas físicas o datos relevantes del agresor" name="observations">
-                <input type="button" value="Regresar">
-                <input type="button" value="Siguiente">
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <div>
-                <img src="./sources/moira-brand.svg">
-            </div>
-            <div>
+                <input type="text" placeholder="Apellidos" name="lastname-a">
                 
+                <label class="formlabel">Sexo</label>
+                <select name="sex-a">
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                    <option value="5">Otro</option>
+                </select>
+
+                <label class="formlabel">Edad aproximada</label>
+                <input type="text" placeholder="Nombres" name="age-a">
+
+                <label class="formlabel">Tipo de persona</label>
+                <select name="person-a">
+                    <option value="1">Estudiante</option>
+                    <option value="2">Colaborador (diferente a profesor(a))</option>
+                    <option value="3">Profesora o Profesor</option>
+                    <option value="4">Alguien externx</option>
+                </select>
+
+                <label class="formlabel">Celular</label>
+                <input type="text" placeholder="Celular" name="celphone-a">
+
+                <label class="formlabel">Correo electrónico</label>
+                <input type="email" placeholder="Correo electrónico" name="email-a">
+                <label class="formlabel">Observaciones o datos adicionales</label>
+                <textarea placeholder="Narrar caracteristicas físicas o datos relevantes del agresor" name="observations">
+                
+                <input type="button" value="Regresar">
+                <input type="button" value="Siguiente">
             </div>
         </fieldset>
 
         <fieldset>
             <div>
                 <img src="./sources/moira-brand.svg">
+            </div>
+            <div>
+                <label class="formlabel">Fecha de los hechos</label>
+                <input type="date" placeholder="DD/MM/AAAA" name="facts-date">
+
+                <label class="formlabel">Hora de los hechos</label>
+                <input type="time" name="facts-hour">
+
+                <label class="formlabel">Tipo de violencia</label>
+                <select name="violence">
+                    <option value="1">Violencia Física</option>
+                    <option value="2">Violencia Psicológica</option>
+                    <option value="3">Violencia Patrimonial o Económica</option>
+                    <option value="4">Violencia Sexual</option>
+                    <option value="4">Violencia Simbólica</option>
+                </select>
+
+                <label class="formlabel">Lugar de los hechos </label>
+                <input type="text" placeholder="Lugar" name="place">
+ 
+                <label class="formlabel">¿Se utilizó alguna arma?</label>
+                <select name="guns">
+                    <option value="1">Arma blanca (Objetos cortopunzantes)</option>
+                    <option value="2">Arma de fuego </option>
+                    <option value="3">Otro</option>
+                    <option value="4">No se utilizó arma</option>
+                </select>
+
+                <label class="formlabel">Detalles del caso y hechos</label>
+                <textarea placeholder="Narrar descriptivamente lo sucedido" name="facts-description">
+                     
+                <input type="button" value="Regresar">
+                <input type="button" value="Siguiente">
+
+            </div>
+        </fieldset>
+        <h2>hola</h2>
+        <fieldset>
+            <div>
+                <img src="./sources/moira-brand.svg">
+                <h2>MOIRA</h2>
             </div>
             <div>
                 <input type="button" value="Regresar">
@@ -201,6 +232,6 @@
             </div>
         </fieldset>
     </form>
-
+    <footer></footer>
 </body>
 </html>
