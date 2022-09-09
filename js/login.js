@@ -11,14 +11,14 @@ const auth = getAuth();
 const loginForm = document.getElementById("login");
 
 
-const login = async (email, password) => {
+/*const login = async (email, password) => {
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password);
         const userInfo = await getUserInfo(user.uid);
         alert("Ingresó con éxito");
         window.open("./index.html","_self");
     } catch (e) { }
-}
+}*/
 
 const getUserInfo = async (userId) => {
     try {
@@ -42,8 +42,39 @@ loginForm.addEventListener("submit", e => {
     const password = loginForm.password.value;
 
     if (email && password) {
-        alert("eso mamona");
-        login(email, password);
+       /* alert("eso mamona");
+        login(email, password);*/
+        auth.signInWithEmailAndPassword(user,password).then(
+            ()=>{
+                setLoggedUser(auth.currentUser);
+    
+                db.ref('users/' + auth.currentUser.uid).once('value', (snapshot) => {
+    
+                    let data = snapshot.val();
+            
+                    if (data.rol == 'estudiante') {
+                        window.open("./index.html","_self");
+                    }
+            
+                    if (data.rol == "moira") {
+                        
+                       // window.location.href = "homeuser.html";
+                    }
+              
+            
+                }).catch((error) => {
+                    console.error(error);
+                    alert(error);
+                });
+    
+    
+                
+            }
+        ).catch((error)=>{
+    
+            console.log(error.message);
+            alert(error);
+        })
     } else { 
         alert("paila mamasita");
     }

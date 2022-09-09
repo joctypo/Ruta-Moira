@@ -27,18 +27,10 @@ const createUser = async (email, password, userFields) => {
     }
 }
 
-
-const getUserInfo = async (userId) => {
-    try {
-        const docRef = doc(db, "users", userId);
-        const docSnap = await getDoc(docRef);
-        return docSnap.data();
-    } catch (e) { }
-}
-
 registerForm.addEventListener("submit", e => {
     e.preventDefault();
-    //alert("se registro")
+
+    //Datos del registro
     const name = registerForm.name.value;
     const lastname = registerForm.lastname.value;
     const code = registerForm.code.value;
@@ -48,6 +40,7 @@ registerForm.addEventListener("submit", e => {
     const datamoira = registerForm.datamoira.value;
     const email = registerForm.email.value;
     const password = registerForm.password.value;
+    
 
     if (email && password) {
         createUser(email, password, {
@@ -58,7 +51,7 @@ registerForm.addEventListener("submit", e => {
             person,
             celphone,
             datamoira,
-            isAdmin: false,
+            rol: "estudiante",
         });
         
         

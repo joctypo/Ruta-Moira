@@ -22,6 +22,7 @@
         </nav>
     </header>
     <h1>Denuncia</h1>
+    <button type="button" id="who">WHO</button>
     <form id="support" class="auth">
         
         <fieldset>
@@ -47,7 +48,8 @@
                 <input type="text" placeholder="Cédula" name="cedula">
                 <label class="formlabel">Fecha de nacimiento</label>
                 <input type="date" placeholder="DD/MM/AAAA" name="borndate">
-                <select name="Ciudad de residencia" >
+                <label class="formlabel">Ciudad de residencia</label>
+                <select name="city" >
                     <option value="1">Cali</option>
                     <option value="2">Palmira</option>
                 </select>
@@ -63,7 +65,7 @@
                         <option value="2">Colaborador (diferente a profesor(a))</option>
                         <option value="3">Profesora o Profesor</option>
                     </select>
-                <input type="checkbox">
+                <input type="checkbox" name="check">
                 <p>Desea realizar su asistencia de forma totalmente anónima</p>
                 <input type="button" value="Regresar">
                 <input type="button" value="Siguiente">
@@ -118,12 +120,13 @@
 
 
                 <label class="formlabel">¿Presenta alguna diversidad funcional?</label>
-                <select name="person">
+                <select name="diversity">
                     <option value="1">Diversidad Motriz</option>
                     <option value="2">Diversidad Auditiva</option>
                     <option value="3">Diversidad visual</option>
                     <option value="4">Diversidad Cognitiva</option>
                     <option value="5">Diversidad Mental</option>
+                    <option value="6">Ninguna</option>
                 </select>
 
 
@@ -145,23 +148,23 @@
             </div>
             <div>
                 <label class="formlabel">Nombres</label>
-                <input type="text" placeholder="Nombres" name="name-a">
+                <input type="text" placeholder="Nombres" name="namea">
               
                 <label class="formlabel">Apellidos</label>
-                <input type="text" placeholder="Apellidos" name="lastname-a">
+                <input type="text" placeholder="Apellidos" name="lastnamea">
                 
                 <label class="formlabel">Sexo</label>
-                <select name="sex-a">
+                <select name="sexa">
                     <option value="1">Hombre</option>
                     <option value="2">Mujer</option>
                     <option value="5">Otro</option>
                 </select>
 
                 <label class="formlabel">Edad aproximada</label>
-                <input type="text" placeholder="Nombres" name="age-a">
+                <input type="text" placeholder="Edad" name="agea">
 
                 <label class="formlabel">Tipo de persona</label>
-                <select name="person-a">
+                <select name="persona">
                     <option value="1">Estudiante</option>
                     <option value="2">Colaborador (diferente a profesor(a))</option>
                     <option value="3">Profesora o Profesor</option>
@@ -169,10 +172,10 @@
                 </select>
 
                 <label class="formlabel">Celular</label>
-                <input type="text" placeholder="Celular" name="celphone-a">
+                <input type="text" placeholder="Celular" name="celphonea">
 
                 <label class="formlabel">Correo electrónico</label>
-                <input type="email" placeholder="Correo electrónico" name="email-a">
+                <input type="email" placeholder="Correo electrónico" name="emaila">
                 <label class="formlabel">Observaciones o datos adicionales</label>
                 <textarea placeholder="Narrar caracteristicas físicas o datos relevantes del agresor" name="observations"></textarea>
                 
@@ -187,10 +190,10 @@
             </div>
             <div>
                 <label class="formlabel">Fecha de los hechos</label>
-                <input type="date" placeholder="DD/MM/AAAA" name="facts-date">
+                <input type="date" placeholder="DD/MM/AAAA" name="factsdate">
 
                 <label class="formlabel">Hora de los hechos</label>
-                <input type="time" name="facts-hour">
+                <input type="time" name="factshour">
 
                 <label class="formlabel">Tipo de violencia</label>
                 <select name="violence">
@@ -213,7 +216,7 @@
                 </select>
 
                 <label class="formlabel">Detalles del caso y hechos</label>
-                <textarea placeholder="Narrar descriptivamente lo sucedido" name="facts-description"> </textarea>
+                <textarea placeholder="Narrar descriptivamente lo sucedido" name="factsdescription"> </textarea>
                      
                 <input type="button" value="Regresar">
                 <input type="button" value="Siguiente">
@@ -233,5 +236,9 @@
         </fieldset>
     </form>
     <footer></footer>
+    <script src="./js/utils.js"></script>
+    <script type="module" src="./js/support.js"></script>
+    <script type="module" src="./js/authpage.js"></script>
+
 </body>
 </html>
