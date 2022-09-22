@@ -9,7 +9,9 @@ const auth = getAuth();
 
 
 const registerForm = document.getElementById("register");
-
+const nextbutton = document.getElementById ("nextbutton");
+const comebutton = document.getElementById ("comebutton");
+const loginbutton = document.getElementById ("loginbutton");
 
 const createUser = async (email, password, userFields) => {
     try {
@@ -26,6 +28,25 @@ const createUser = async (email, password, userFields) => {
         }
     }
 }
+
+nextbutton.addEventListener("click", e=>{
+
+    document.getElementById("fs-1").style.display = "none";
+    document.getElementById("fs-2").style.display = "flex";
+    document.getElementById("fs-2").style.justifyContent = "center";
+
+})
+
+comebutton.addEventListener("click", e=> {
+    document.getElementById("fs-2").style.display = "none";
+    document.getElementById("fs-1").style.display = "flex";
+    document.getElementById("fs-1").style.justifyContent = "center";
+})
+
+loginbutton.addEventListener("click", e=> {
+    window.open("./login.html","_self");
+})
+
 
 registerForm.addEventListener("submit", e => {
     e.preventDefault();

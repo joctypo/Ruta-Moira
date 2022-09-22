@@ -5,56 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Moira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <div>
+<body id="register_page">
+    
+    <div >
         <div>
-            <img src="./sources/icesi-brand.svg">
+            
             <form id="register" class="auth">
-                
-                <fieldset>
-                    <img src="./sources/moira-brand.svg">
-                        <label class="formlabel">Nombres</label>
-                        <input type="text" placeholder="Nombres" name="name">
-                        <label class="formlabel">Apellidos</label>
-                        <input type="text" placeholder="Apellidos" name="lastname">
-                        <label class="formlabel">Código</label>
-                        <input type="text" placeholder="Código" name="code">
-                        <label class="formlabel">Universidad</label>
-                        <select name="university" >
+                <div class="auth__div1" id="fs-1">
+                    <fieldset class="auth__form" >
+                        <div class="brand">
+                            <img src="./sources/icesi-brand.svg" >
+                        </div>
+                       <div class="brand">
+                            <img src="./sources/moira-brand.svg"  >
+                       </div>
+                       <div>
+                        <div class="auth__form__inputs">
+                            <label class="formlabel">Nombres</label>
+                            <input type="text" placeholder="Nombres" name="name" class="forminput"> 
+                        </div>
+                        <div class="auth__form__inputs">
+                            <label class="formlabel">Apellidos</label>
+                            <input type="text" placeholder="Apellidos" name="lastname" class="forminput">
+                        </div>
+                        <div class="auth__form__inputs">
+                            <label class="formlabel">Código</label>
+                            <input type="text" placeholder="Código" name="code" class="forminput">
+                        </div>
+                        <div class="auth__form__inputs">
+                            <label class="formlabel">Universidad</label>
+                            <select name="university" class="forminput">
                             <option value="1">Universidad Icesi</option>
                             <option value="2">Otra Universidad</option>
-                        </select>
-                        <input type="button" value="Siguiente">
-                </fieldset>
-                <img src="./sources/image-register.png">
-                <fieldset>
-                    <img src="./sources/moira-brand.svg">
+                            </select>
+                        </div>
+                         
+                       </div>
+    
+                       <div>
+                        <input type="button" value="Volver a Login" class="button-1" id="loginbutton">
+                        <input type="button" value="Siguiente" class="button-2" id="nextbutton">
+                       </div>
+                                   
+                    </fieldset>
+                </div>
+                
+                <div class="auth__div2" id="fs-2">
+                    <fieldset class="auth__form">
+                    <div class="brand">
+                        <img src="./sources/icesi-brand.svg"  >
+                    </div>
+                    <div class="brand">
+                        <img src="./sources/moira-brand.svg" >
+                    </div>
                     
                         <label class="formlabel">Tipo de persona</label>
-                        <select name="person">
+                        <select name="person" class="forminput">
                             <option value="1">Estudiante</option>
                             <option value="2">Colaborador (diferente a profesor(a))</option>
                             <option value="3">Profesora o Profesor</option>
                         </select>
-                        <label class="formlabel">Celular</label>
-                        <input type="text" placeholder="Celular" name="celphone">
+                        <label class="formlabel" >Celular</label>
+                        <input type="text" placeholder="Celular" name="celphone" class="forminput">
                         <label class="formlabel">¿Cómo conoció MOIRA Digital</label>
-                        <select name="datamoira">
+                        <select name="datamoira" class="forminput">
                             <option value="1">Redes sociales</option>
                             <option value="2">Profesora o profesor</option>
                             <option value="3">Charla institucional</option>
                             <option value="4">Otro</option>
                         </select>
                         <label class="formlabel">Correo electrónico</label>
-                        <input type="email" placeholder="Correo electrónico" name="email">
+                        <input type="email" placeholder="Correo electrónico" name="email" class="forminput">
                         <label class="formlabel">Contraseña</label>
-                        <input type="password" placeholder="Contraseña" name="password">
-                        <input type="button" value="Regresar">
-                        <input type="submit" value="Siguiente">
-                </fieldset>
-                <img src="./sources/image-register2.png">
+                        <input type="password" placeholder="Contraseña" name="password" class="forminput">
+                        <input type="button" value="Regresar" class="button-1" id="comebutton">
+                        <input type="submit" value="Registrarme" class="button-2">
+                    </fieldset>
+                    
+                </div>
             </form>
         </div>
        
