@@ -46,6 +46,28 @@ body{
     margin: 0;
 }
 
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $blue-2;
+    align-items: center;
+    text-align: center;
+    color: $neutral-color-6;
+
+    h3{
+        margin: 4rem 0rem 1rem 0rem;
+    }
+
+    img{
+        width: 70%;
+    }
+
+}
+
+#buttonbanner{
+    width: 20%;
+}
 h5{
     font-family: $subtittle-font;
     font-weight: 700;

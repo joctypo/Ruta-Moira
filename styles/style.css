@@ -2,6 +2,26 @@ body {
   margin: 0;
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #74CBF0;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.banner h3 {
+  margin: 4rem 0rem 1rem 0rem;
+}
+.banner img {
+  width: 70%;
+}
+
+#buttonbanner {
+  width: 20%;
+}
+
 h5 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
