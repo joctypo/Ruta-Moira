@@ -470,6 +470,7 @@ p{
         text-align: center;
         padding: 0px 20%;
         color: $neutral-color-6;
+        height: 100vh;
         div{
             margin-top: 2rem;
         }
@@ -488,6 +489,7 @@ p{
         flex-direction: row;
         border-radius: 16px;
         margin: 2rem 10%;
+
        // margin: 16px 0px 16px 0px;
         //align-items: center;
 
@@ -546,10 +548,12 @@ p{
         flex-direction: row;
         border-radius: 16px;
         margin: 2rem 10%;
+        height: 100vh;
        // margin: 16px 0px 16px 0px;
         //align-items: center;
         &__brand{
             width: 50%;
+            margin-bottom: 2rem;
         }
 
         &__divbrand{
@@ -578,14 +582,17 @@ p{
             padding: 3em 2em 2em 2em;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
             color: $neutral-color-6;
-        
+            
         }
 
         &__right{
             width: 60%;
             padding: 3em 6em 2em 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         &__check{
@@ -652,5 +659,36 @@ fieldset{
     padding-block-end: 0;
     min-inline-size: min-content;
 }
+
+#fss2{
+    display: none;
+}
+
+#fss3{
+    display: none;
+}
+
+#fss4{
+    display: none;
+}
+#fss5{
+    display: none;
+}
+#fss6{
+    display: none;
+}
+
+#t21{
+    background: $secondary-color-1;
+}
+
+#t22{
+    background: $secondary-color-1;
+}
+
+#t23{
+    background: $secondary-color-1;
+}
+
 
 

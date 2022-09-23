@@ -8,7 +8,16 @@ const db = getFirestore(app);
 const auth = getAuth();
 
 const supportform = document.getElementById("support");
-
+const fssr2 = document.getElementById("fssr2");
+const fssr3 = document.getElementById("fssr3");
+const fssr4 = document.getElementById("fssr4");
+const fssr5 = document.getElementById("fssr5");
+const fssr6 = document.getElementById("fssr6");
+const fssa1 = document.getElementById("fssa1");
+const fssa2 = document.getElementById("fssa2");
+const fssa3 = document.getElementById("fssa3");
+const fssa4 = document.getElementById("fssa4");
+const fssa5 = document.getElementById("fssa5");
 
 //Collect information
 const createcase = async (userFields) => {
@@ -23,6 +32,76 @@ const createcase = async (userFields) => {
     }
     
 };
+
+fssr2.addEventListener("click", e=>{
+
+    document.getElementById("fss2").style.display = "none";
+    document.getElementById("fss1").style.display = "flex";  
+    
+})
+
+fssr3.addEventListener("click", e=>{
+
+    document.getElementById("fss3").style.display = "none";
+    document.getElementById("fss2").style.display = "flex";  
+
+})
+
+fssr4.addEventListener("click", e=>{
+
+    document.getElementById("fss4").style.display = "none";
+    document.getElementById("fss3").style.display = "flex";  
+
+})
+
+fssr5.addEventListener("click", e=>{
+
+    document.getElementById("fss5").style.display = "none";
+    document.getElementById("fss4").style.display = "flex";  
+
+})
+
+fssr6.addEventListener("click", e=>{
+
+    document.getElementById("fss6").style.display = "none";
+    document.getElementById("fss5").style.display = "flex";  
+
+})
+
+fssa1.addEventListener("click", e=>{
+
+    document.getElementById("fss1").style.display = "none";
+    document.getElementById("fss2").style.display = "flex";  
+
+})
+
+fssa2.addEventListener("click", e=>{
+
+    document.getElementById("fss2").style.display = "none";
+    document.getElementById("fss3").style.display = "flex";  
+
+})
+
+fssa3.addEventListener("click", e=>{
+
+    document.getElementById("fss3").style.display = "none";
+    document.getElementById("fss4").style.display = "flex";  
+
+})
+
+fssa4.addEventListener("click", e=>{
+
+    document.getElementById("fss4").style.display = "none";
+    document.getElementById("fss5").style.display = "flex";  
+
+})
+
+fssa5.addEventListener("click", e=>{
+
+    document.getElementById("fss5").style.display = "none";
+    document.getElementById("fss6").style.display = "flex";  
+
+})
 
 supportform.addEventListener("submit", e => {
     e.preventDefault();
