@@ -6,8 +6,27 @@ h5 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 28px;
   letter-spacing: 0.18px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 30px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
@@ -15,7 +34,7 @@ h5 {
 p {
   font-family: "Overpass", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   margin-block-start: 0em;
   margin-block-end: 0;
   margin-inline-start: 0px;
@@ -29,6 +48,10 @@ p {
   justify-content: center;
   width: 100%;
   height: 100vh;
+}
+
+#support {
+  background: #FCF9F5;
 }
 
 .auth {
@@ -59,7 +82,7 @@ p {
 .formlabel {
   font-family: "Overpass", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   color: #662D91;
   padding: 0px 3px 0px 3px;
   background: #FFFFFF;
@@ -72,12 +95,12 @@ p {
   background: #FFFFFF;
   border: 2px solid #662D91;
   border-radius: 3px;
-  padding: 10px;
+  padding: 12px;
   z-index: 3;
   color: #662D91;
   font-family: "Overpass", sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   margin: 5px 0px;
 }
 .forminput :focus {
@@ -106,6 +129,24 @@ p {
   background-color: #4D71CD;
 }
 
+.button-1support {
+  background-color: #304F9D;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 100px;
+  width: 50%;
+  margin: 2rem;
+}
+.button-1support:hover {
+  background-color: #4D71CD;
+}
+
 .button-2 {
   background-color: #FF92E8;
   border: none;
@@ -121,6 +162,24 @@ p {
   margin: 16px 0px;
 }
 .button-2:hover {
+  background-color: #FFB9F0;
+}
+
+.button-2support {
+  background-color: #FF92E8;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 100px;
+  width: 50%;
+  margin: 2rem;
+}
+.button-2support:hover {
   background-color: #FFB9F0;
 }
 
@@ -141,7 +200,6 @@ p {
 
 .nav {
   background: #FCF9F5;
-  width: 100%;
   top: 0;
   left: 0;
   z-index: 20;
@@ -156,7 +214,7 @@ p {
   color: #662D91;
   font-family: "Overpass", sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
 }
 .nav li {
   display: inline-block;
@@ -298,6 +356,160 @@ p {
   width: 16.6666666667%;
   height: 16px;
   background: #662D91;
+}
+
+.support__formfinal {
+  background: #662D91;
+  border: 0px;
+  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  margin: 2rem 10%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20%;
+  color: #FFFFFF;
+}
+.support__formfinal div {
+  margin-top: 2rem;
+}
+.support__formfinal img {
+  margin-bottom: 2rem;
+}
+.support__form1 {
+  background: #FFFFFF;
+  border: 0px;
+  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+  margin: 2rem 10%;
+}
+.support__form1__inputs {
+  display: flex;
+  flex-direction: column;
+}
+.support__form1__left {
+  width: 50%;
+  background: #74CBF0;
+  border-radius: 16px 0px 0px 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.support__form1__left img {
+  margin-bottom: 0;
+  width: 80%;
+}
+.support__form1__right {
+  width: 50%;
+  padding: 3em 4em 2em 1em;
+  color: #662D91;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.support__form1__right__body {
+  margin-top: 2rem;
+}
+.support__form {
+  background: #FFFFFF;
+  border: 0px;
+  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+  margin: 2rem 10%;
+}
+.support__form__brand {
+  width: 50%;
+}
+.support__form__divbrand {
+  display: flex;
+  justify-content: center;
+}
+.support__form__div {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 100%;
+  padding: 0.3rem;
+}
+.support__form__row {
+  display: flex;
+  flex-direction: row;
+}
+.support__form__left {
+  width: 40%;
+  background: #662D91;
+  border-radius: 16px 0px 0px 16px;
+  padding: 3em 2em 2em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #FFFFFF;
+}
+.support__form__right {
+  width: 60%;
+  padding: 3em 6em 2em 1em;
+}
+.support__form__check {
+  display: flex;
+  flex-direction: row;
+  color: #662D91;
+  align-items: center;
+}
+.support__form__tracking {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.support__form__tracking__round1 {
+  background: #FF92E8;
+  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  margin: 0px 8px 1.5em 8px;
+}
+.support__form__tracking__round2 {
+  background: #FFDAF7;
+  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  margin: 0px 8px 1.5em 8px;
+}
+.support__form__tracking__round3 {
+  background: #FFDAF7;
+  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  margin: 0px 8px 1.5em 8px;
+}
+.support__form__tracking__round4 {
+  background: #FFDAF7;
+  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  margin: 0px 8px 1.5em 8px;
+}
+.support__form__button {
+  display: flex;
+  flex-direction: row;
+}
+
+fieldset {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: min-content;
 }
 
 /*# sourceMappingURL=style.css.map */

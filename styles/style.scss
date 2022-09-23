@@ -50,8 +50,27 @@ h5{
     font-family: $subtittle-font;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0.18px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h3{
+    font-family: $subtittle-font;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 30px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h4{
+    font-family: $tittle-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
@@ -59,11 +78,12 @@ h5{
 p{
     font-family: $body-font;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     margin-block-start: 0em;
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    
 }
 
 
@@ -74,6 +94,11 @@ p{
     justify-content: center;
     width: 100%;
     height: 100vh;
+    
+}
+
+#support{
+    background: $neutral-color-7;
     
 }
 
@@ -117,7 +142,7 @@ p{
 .formlabel{
     font-family: $body-font;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     color: $purple-1;
     padding: 0px 3px 0px 3px;
     background: $neutral-color-6;
@@ -130,13 +155,14 @@ p{
     background: #FFFFFF;
     border: 2px solid $purple-1;
     border-radius: 3px;
-    padding: 10px;
+    padding: 12px;
     z-index: 3;
     color: $purple-1;
     font-family: $body-font;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     margin: 5px 0px;
+    
 
     :focus{
         border: 2px solid $purple-1;
@@ -145,6 +171,7 @@ p{
 
 ::placeholder{
     color: $secondary-color-1;
+    
 }
 
 .button-1{
@@ -166,6 +193,24 @@ p{
     }
 }
 
+.button-1support{
+    background-color: $primary-color-1;
+    border: none;
+    color: $neutral-color-6;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: $body-font;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 100px;
+    width: 50%;
+    margin: 2rem ;
+
+    &:hover{
+        background-color: $primary-color-2;
+    }
+}
 .button-2{
     background-color: $secondary-color-1;
     border: none;
@@ -179,6 +224,23 @@ p{
     border-radius: 100px;
     width: 100%;
     margin: 16px 0px;
+    &:hover{
+        background-color: $secondary-color-2;
+    }
+}
+.button-2support{
+    background-color: $secondary-color-1;
+    border: none;
+    color: $neutral-color-6;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: $body-font;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 100px;
+    width: 50%;
+    margin: 2rem;
     &:hover{
         background-color: $secondary-color-2;
     }
@@ -206,7 +268,6 @@ p{
 
 .nav{
     background: $neutral-color-7 ;
-    width: 100%;
     top: 0;
     left: 0;
     z-index: 20;
@@ -221,7 +282,7 @@ p{
         color: $purple-1;
         font-family: $body-font;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 16px;
         
         
     }
@@ -391,3 +452,205 @@ p{
     }
 
 }
+
+.support{
+
+    &__formfinal{
+
+        background: $purple-1;
+        border: 0px;
+        box-shadow: $box-shadow;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px;
+        margin: 2rem 10%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 20%;
+        color: $neutral-color-6;
+        div{
+            margin-top: 2rem;
+        }
+        img{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__form1{
+        background: $neutral-color-6;
+        border: 0px;
+        box-shadow: $box-shadow;
+        //padding: 20px 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        border-radius: 16px;
+        margin: 2rem 10%;
+       // margin: 16px 0px 16px 0px;
+        //align-items: center;
+
+ 
+
+
+        &__inputs{
+            display: flex;
+            flex-direction: column;
+           // width: 100%;
+            
+        }
+
+        &__left{
+            width: 50%;
+            background:$blue-2;
+            border-radius: 16px 0px 0px 16px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            img{
+                margin-bottom: 0;
+                width: 80%;
+
+                
+            }
+        }
+
+        &__right{
+            width: 50%;
+            padding: 3em 4em 2em 1em;
+            color: $purple-1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &__body{
+                margin-top: 2rem;
+            }
+        }
+
+        
+
+
+    }
+
+    &__form{
+
+
+
+        background: $neutral-color-6;
+        border: 0px;
+        box-shadow: $box-shadow;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        border-radius: 16px;
+        margin: 2rem 10%;
+       // margin: 16px 0px 16px 0px;
+        //align-items: center;
+        &__brand{
+            width: 50%;
+        }
+
+        &__divbrand{
+            display: flex;
+            justify-content: center;
+        }
+        &__div{
+            display: flex;
+            
+            flex-direction: column;
+            align-content: flex-start;
+            width: 100%;
+            padding: 0.3rem;
+           
+        }
+
+        &__row{
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__left{
+            width: 40%;
+            background: $purple-1;
+            border-radius: 16px 0px 0px 16px;
+            padding: 3em 2em 2em 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: $neutral-color-6;
+        
+        }
+
+        &__right{
+            width: 60%;
+            padding: 3em 6em 2em 1em;
+        }
+
+        &__check{
+            display: flex;
+            flex-direction: row;
+            color: $purple-1;
+           align-items: center;
+        
+            
+        }
+
+        &__tracking{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &__round1{
+                background: $secondary-color-1;
+                border-radius: 100%;
+                height: 16px;
+                width: 16px;
+                margin: 0px 8px 1.5em 8px;
+            }
+            &__round2{
+                background: $secondary-color-3;
+                border-radius: 100%;
+                height: 16px;
+                width: 16px;
+                margin: 0px 8px 1.5em  8px;
+            }
+            &__round3{
+                background: $secondary-color-3;
+                border-radius: 100%;
+                height: 16px;
+                width: 16px;
+                margin: 0px 8px 1.5em  8px;
+            }
+            &__round4{
+                background: $secondary-color-3;
+                border-radius: 100%;
+                height: 16px;
+                width: 16px;
+                margin: 0px 8px 1.5em 8px;
+            }
+        }
+
+        &__button{
+            display: flex;
+            flex-direction: row;
+        }
+
+        
+    }
+}
+
+
+
+
+fieldset{
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    min-inline-size: min-content;
+}
+
+

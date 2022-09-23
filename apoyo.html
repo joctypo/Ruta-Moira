@@ -7,235 +7,602 @@
     <title>Apoyo Ruta Moira</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body id="support">
     <header>
         <nav class="nav">
-            
+            <a href="./index.html"><img class="nav_logo" id="logo"  src="./sources/moira-brand.svg" alt="Logo Ruta MOIRA"></a>
+          
             <ul class="nav_list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#moira">MOIRA</a></li>
-                <li><a href="#aprendamos">Aprendamos</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#apoyo">Apoyo</a></li>
-                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./moira.html">MOIRA</a></li>
+                <li><a href="./aprendamos.html">Aprendamos</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./apoyo.html">Apoyo</a></li>
+                <li><a href="./profile.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Denuncia</h1>
-    <button type="button" id="who">WHO</button>
-    <form id="support" class="auth">
+    <form id="support" class="support">
         
-        <fieldset>
-            <div>
-                <img src="./sources/moira-brand.svg">
+        <fieldset class="support__form1">
+            <div class="support__form1__left">
+                <img src="./sources/picturemelissa.svg">
             </div>
-            <div>
-                <p>Lorem ipsum</p>
-                <input type="button" value="Siguiente">
-            </div>
+            <div class="support__form1__right">
+                <div  class="support__form1__right__body">
+                    <h3>Bienvenida, <br>
+                        Bienvenido y <br>
+                        Bienvenide</h3>
+                </div>
+               <div  class="support__form1__right__body">
+                <h4>Primero..lo que <br>debes de saber</h4>
+               </div>
+               <div class="support__form1__right__body">
+                <p>Por medio de esta herramienta de apoyo, podrás interponer tu queja sobre alguna experiencia de violencias basada en género en la Universidad ICESI.  De esta forma, podrás recibir <b>asistencia confidencial, oportuna y de calidad.</b> Adicional a esto, te permite recibir información clara sobre derechos y mecanismos para hacerlos efectivos.<b>Todo esto bajo tu consentimiento y autorización previa.</b></p>
+               
+                <br>     <p> <b>Por este medio podrás activar la ruta MOIRA para dar resolución a tu caso.</b></p>
+                 <br>
+                 <p>Antes de interponer la queja le invitamos a conocer los tipos de violencia para mayor claridad</p>
+
+               </div>
+               <div class="support__form1__right__body">
+                <input type="button" value="Siguiente" class="button-2">
+        
+               </div>
+             </div>
         </fieldset>
 
-        <fieldset>
-            <div>
-                <img src="./sources/moira-brand.svg">
+        <fieldset class="support__form">
+            <div class="support__form__left">
+                <div class="support__form__divbrand">
+                    <img src="./sources/moira-brand.svg" class="support__form__brand">
+                </div>
+                <div>
+                    <h5>
+                        ¿Por qué estos datos?
+                    </h5>
+                    <p>
+                        Para nosotras es importante llevar un registro demográfico detallado de las personas que interpornen la queja basada en género. Adicional a esto, los datos son tomados por seguridad en caso de eventualidades de cáracter urgente. 
+    Cabe aclarar que el protocolo presenta en su esencia un nivel de anonimato. 
+                    </p>
+
+                </div>
+                <div>
+                    <h5>
+                        ¿Puedo hacerlo de forma totalmente anónima?
+                    </h5>
+                    <p>
+                        Claro que sí, este es un espacio que hemos diseñado para usted y su seguridad, por lo que si desea compartir su caso de forma totalmente anonima, lo puede realizar para contribuir con la visibilización de los mismos. 
+
+                        <br>Se resalta qué al realizar su asistencia de forma 100% anónima, se limitan ciertos procesos ideales para los casos y se reduce la comunicación. 
+                    </p>
+                </div>
+
+
             </div>
-            <div>
-                <label class="formlabel">Nombres</label>
-                <input type="text" placeholder="Nombres" name="name">
-                <label class="formlabel">Apellidos</label>
-                <input type="text" placeholder="Apellidos" name="lastname">
-                <label class="formlabel">Cédula o Tarjeta de identidad</label>
-                <input type="text" placeholder="Cédula" name="cedula">
-                <label class="formlabel">Fecha de nacimiento</label>
-                <input type="date" placeholder="DD/MM/AAAA" name="borndate">
-                <label class="formlabel">Ciudad de residencia</label>
-                <select name="city" >
-                    <option value="1">Cali</option>
-                    <option value="2">Palmira</option>
-                </select>
-                <label class="formlabel">Celular</label>
-                <input type="text" placeholder="Celular" name="celphone">
-                <label class="formlabel">Dirección de residencia</label>
-                <input type="text" placeholder="Dirección de residencia" name="addres">
-                <label class="formlabel">Correo electrónico</label>
-                <input type="email" placeholder="Correo electrónico" name="email">
-                <label class="formlabel">Tipo de persona</label>
-                    <select name="person">
-                        <option value="1">Estudiante</option>
-                        <option value="2">Colaborador (diferente a profesor(a))</option>
-                        <option value="3">Profesora o Profesor</option>
-                    </select>
-                <input type="checkbox" name="check">
-                <p>Desea realizar su asistencia de forma totalmente anónima</p>
-                <input type="button" value="Regresar">
-                <input type="button" value="Siguiente">
+
+            <div class="support__form__right">
+                    <div class="support__form__tracking">
+                        <div class="support__form__tracking__round1"></div>
+                        <div class="support__form__tracking__round2"></div>
+                        <div class="support__form__tracking__round3"></div>
+                        <div class="support__form__tracking__round4"></div>
+                    </div>
+                    <div class="support__form__row">
+                        <div class="support__form__div">
+                            <label class="formlabel">Nombres</label>
+                            <input type="text" placeholder="Nombres" name="name" class="forminput">   
+                        </div>
+                        <div class="support__form__div">
+                            <label class="formlabel">Apellidos</label>
+                            <input type="text" placeholder="Apellidos" name="lastname" class="forminput">
+                        </div>
+                    </div>
+                   
+                    <div class="support__form__row">
+                        <div class="support__form__div">
+                            <label class="formlabel">Cédula o Tarjeta de identidad</label>
+                            <input type="text" placeholder="Cédula" name="cedula" class="forminput">   
+                        </div>
+                        <div class="support__form__div">
+                            <label class="formlabel">Fecha de nacimiento</label>
+                            <input type="date" placeholder="DD/MM/AAAA" name="borndate" class="forminput">
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="support__form__row">
+                        <div class="support__form__div">
+                            <label class="formlabel">Ciudad de residencia</label>
+                             <select name="city" class="forminput">
+                            <option value="1">Cali</option>
+                            <option value="2">Palmira</option>
+                             </select>
+                        </div>
+                        <div class="support__form__div">
+                            <label class="formlabel">Celular</label>
+                            <input type="text" placeholder="Celular" name="celphone" class="forminput">    
+                        </div>
+
+                    </div>
+                   
+                    <div class="support__form__row">
+                        <div class="support__form__div">
+                            <label class="formlabel">Dirección de residencia</label>
+                            <input type="text" placeholder="Dirección de residencia" name="addres" class="forminput">
+                        </div>
+                    </div>
+                   
+                    <div  class="support__form__row">
+
+                        <div class="support__form__div">
+                            <label class="formlabel">Correo electrónico</label>
+                             <input type="email" placeholder="Correo electrónico" name="email" class="forminput">
+                       
+                        </div>
+                    </div>
+
+                    <div class="support__form__row">
+
+                        <div class="support__form__div">
+                            <label class="formlabel">Tipo de persona</label>
+                            <select name="person" class="forminput">
+                                <option value="1">Estudiante</option>
+                                <option value="2">Colaborador (diferente a profesor(a))</option>
+                                <option value="3">Profesora o Profesor</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+
+                    <div class="support__form__check">
+                        
+                        <input type="checkbox" name="check" class="support__form__check__box" >
+                        
+                        <p>Desea realizar su asistencia de forma totalmente anónima</p>    
+                    </div>
+                    <div class="support__form__button">
+                        <input type="button" value="Regresar" class="button-1support">
+                        <input type="button" value="Siguiente" class="button-2support">
+                    </div>
+                    
+                
+
             </div>
-        </fieldset>
 
-        <fieldset>
-            <div>
-                <img src="./sources/moira-brand.svg">
-            </div>
-            <div>
-                <label class="formlabel">Identidad de Género</label>
-                <select name="identity">
-                    <option value="1">Mujer</option>
-                    <option value="2">Hombre</option>
-                    <option value="3">Queer</option>
-                    <option value="4">Otro</option>
-                    <option value="5">Prefiero no decirlo</option>
-                </select>
-
-
-                <label class="formlabel">Orientación sexual</label>
-                <select name="orientation">
-                    <option value="1">Heterosexual</option>
-                    <option value="2">Bisexual</option>
-                    <option value="3">Homosexual</option>
-                    <option value="3">Asexual</option>
-                    <option value="3">Pansexual</option>
-                    <option value="3">Otro</option>
-                    <option value="3">Prefiero no decirlo</option>
-                </select>
-              
-
-                <label class="formlabel">Pronombres de preferencia</label>
-                <select name="pronouns">
-                    <option value="1">Él</option>
-                    <option value="2">Ella</option>
-                    <option value="3">Elle</option>
-                </select>
-
-
-                <label class="formlabel">Apodo o nombre de preferencia</label>
-                <input type="text" placeholder="Nombre de preferencia" name="nickname">
-
-
-                <label class="formlabel">¿Por qué medio desea ser contactadx?</label>
-                <select name="contact">
-                    <option value="1">Celular</option>
-                    <option value="2">Correo</option>
-                    <option value="3">No deseo ser contactadx</option>
-                </select>
-
-
-                <label class="formlabel">¿Presenta alguna diversidad funcional?</label>
-                <select name="diversity">
-                    <option value="1">Diversidad Motriz</option>
-                    <option value="2">Diversidad Auditiva</option>
-                    <option value="3">Diversidad visual</option>
-                    <option value="4">Diversidad Cognitiva</option>
-                    <option value="5">Diversidad Mental</option>
-                    <option value="6">Ninguna</option>
-                </select>
-
-
-                <label class="formlabel">¿Desea asistencia por parte de alguno de nuestros psicólogos?</label>
-                <select name="helppsico">
-                    <option value="1">Sí</option>
-                    <option value="2">No</option>
-                </select>
 
             
-                <input type="button" value="Regresar">
-                <input type="button" value="Siguiente">
-            </div>
         </fieldset>
 
-        <fieldset>
-            <div>
-                <img src="./sources/moira-brand.svg">
+        <fieldset class="support__form">
+            <div class="support__form__left">
+                <div class="support__form__divbrand">
+                    <img src="./sources/moira-brand.svg" class="support__form__brand">
+                </div>
+                <div>
+                    <h5>
+                        Género
+                    </h5>
+                    <p>
+                        Para nosotras es importante conocerle bien y así darle una solución o reparación acorde a sus necesidades. Por eso ahondamos en preguntas que son de gran importancia.  </p>
+
+                </div>
+                <div>
+                    <h5>
+                        Cita con Psicólogos
+                    </h5>
+                    <p>
+                        Recuerda qué, para una atención más completa, te recomendamos asistir con nuestros psicológos de forma presencial en Bienestar Universitario </p>
+                </div>
+
+
             </div>
-            <div>
-                <label class="formlabel">Nombres</label>
-                <input type="text" placeholder="Nombres" name="namea">
+
+
+
+            <div class="support__form__right"> 
+                <div class="support__form__tracking">
+                    <div class="support__form__tracking__round1"></div>
+                    <div class="support__form__tracking__round2"></div>
+                    <div class="support__form__tracking__round3"></div>
+                    <div class="support__form__tracking__round4"></div>
+                </div>
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">Identidad de Género</label>
+                        <select name="identity" class="forminput">
+                            <option value="1">Mujer</option>
+                            <option value="2">Hombre</option>
+                            <option value="3">Queer</option>
+                            <option value="4">Otro</option>
+                            <option value="5">Prefiero no decirlo</option>
+                        </select>
+                    </div>
+                    <div class="support__form__div">
+                        <label class="formlabel">Orientación sexual</label>
+                        <select name="orientation" class="forminput">
+                            <option value="1">Heterosexual</option>
+                            <option value="2">Bisexual</option>
+                            <option value="3">Homosexual</option>
+                            <option value="3">Asexual</option>
+                            <option value="3">Pansexual</option>
+                            <option value="3">Otro</option>
+                            <option value="3">Prefiero no decirlo</option>
+                        </select>   
+                    </div>
+                </div>
+
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">Pronombres de preferencia</label>
+                        <select name="pronouns" class="forminput">
+                            <option value="1">Él</option>
+                            <option value="2">Ella</option>
+                            <option value="3">Elle</option>
+                        </select>   
+                    </div>
+                    <div class="support__form__div">
+                        <label class="formlabel">Apodo o nombre de preferencia</label>
+                        <input type="text" placeholder="Nombre de preferencia" name="nickname" class="forminput">
+        
+           
+                    </div>
+                </div>
+
+
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">¿Por qué medio desea ser contactadx?</label>
+                        <select name="contact" class="forminput">
+                            <option value="1">Celular</option>
+                            <option value="2">Correo</option>
+                            <option value="3">No deseo ser contactadx</option>
+                        </select>
+           
+                    </div>
+                </div>
+
+
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">¿Presenta alguna diversidad funcional?</label>
+                        <select name="diversity" class="forminput">
+                            <option value="1">Diversidad Motriz</option>
+                            <option value="2">Diversidad Auditiva</option>
+                            <option value="3">Diversidad visual</option>
+                            <option value="4">Diversidad Cognitiva</option>
+                            <option value="5">Diversidad Mental</option>
+                            <option value="6">Ninguna</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">¿Desea asistencia por parte de alguno de nuestros psicólogos?</label>
+                        <select name="helppsico" class="forminput">
+                            <option value="1">Sí</option>
+                            <option value="2">No</option>
+                        </select> 
+                    </div>
+                </div>
+
+                <div class="support__form__button">
+
+                    <input type="button" value="Regresar" class="button-1support">
+                    <input type="button" value="Siguiente" class="button-2support">
+                </div>
               
-                <label class="formlabel">Apellidos</label>
-                <input type="text" placeholder="Apellidos" name="lastnamea">
-                
-                <label class="formlabel">Sexo</label>
-                <select name="sexa">
-                    <option value="1">Hombre</option>
-                    <option value="2">Mujer</option>
-                    <option value="5">Otro</option>
-                </select>
-
-                <label class="formlabel">Edad aproximada</label>
-                <input type="text" placeholder="Edad" name="agea">
-
-                <label class="formlabel">Tipo de persona</label>
-                <select name="persona">
-                    <option value="1">Estudiante</option>
-                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                    <option value="3">Profesora o Profesor</option>
-                    <option value="4">Alguien externx</option>
-                </select>
-
-                <label class="formlabel">Celular</label>
-                <input type="text" placeholder="Celular" name="celphonea">
-
-                <label class="formlabel">Correo electrónico</label>
-                <input type="email" placeholder="Correo electrónico" name="emaila">
-                <label class="formlabel">Observaciones o datos adicionales</label>
-                <textarea placeholder="Narrar caracteristicas físicas o datos relevantes del agresor" name="observations"></textarea>
-                
-                <input type="button" value="Regresar">
-                <input type="button" value="Siguiente">
             </div>
         </fieldset>
 
-        <fieldset>
-            <div>
-                <img src="./sources/moira-brand.svg">
+        <fieldset class="support__form">
+            <!----->
+            <div class="support__form__left">
+                <div class="support__form__divbrand">
+                    <img src="./sources/moira-brand.svg" class="support__form__brand">
+                </div>
+                <div>
+                    <h5>
+                        Datos del agresor
+                    </h5>
+                    <p>
+                        Estos datos puede que no los tengas, por lo que no son obligatorios para avanzar con el caso y poder generar reparaciones. No obstante, es importante que si cuenta con alguno de ellos, sean suministrados para facilitar la agilidad del caso. </p>
+
+                </div>
+                <div>
+                    <h5>
+                        ¡Importante!
+                    </h5>
+                    <p>
+                        Recuerda que estos datos son para generar un caso robusto y contar con la mayor cantidad de información, pero no implican la confrontación de su agresor o la notificación del mismo.</p>
+                </div>
+
+
             </div>
-            <div>
-                <label class="formlabel">Fecha de los hechos</label>
-                <input type="date" placeholder="DD/MM/AAAA" name="factsdate">
 
-                <label class="formlabel">Hora de los hechos</label>
-                <input type="time" name="factshour">
 
-                <label class="formlabel">Tipo de violencia</label>
-                <select name="violence">
-                    <option value="1">Violencia Física</option>
-                    <option value="2">Violencia Psicológica</option>
-                    <option value="3">Violencia Patrimonial o Económica</option>
-                    <option value="4">Violencia Sexual</option>
-                    <option value="4">Violencia Simbólica</option>
-                </select>
+            <div class="support__form__right">
 
-                <label class="formlabel">Lugar de los hechos </label>
-                <input type="text" placeholder="Lugar" name="place">
- 
-                <label class="formlabel">¿Se utilizó alguna arma?</label>
-                <select name="guns">
-                    <option value="1">Arma blanca (Objetos cortopunzantes)</option>
-                    <option value="2">Arma de fuego </option>
-                    <option value="3">Otro</option>
-                    <option value="4">No se utilizó arma</option>
-                </select>
+                <div class="support__form__tracking">
+                    <div class="support__form__tracking__round1"></div>
+                    <div class="support__form__tracking__round2"></div>
+                    <div class="support__form__tracking__round3"></div>
+                    <div class="support__form__tracking__round4"></div>
+                </div>
 
-                <label class="formlabel">Detalles del caso y hechos</label>
-                <textarea placeholder="Narrar descriptivamente lo sucedido" name="factsdescription"> </textarea>
+                 <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">Nombres</label>
+                        <input type="text" placeholder="Nombres" name="namea" class="forminput">
+                    </div>
+    
+                    <div class="support__form__div">
+                        <label class="formlabel">Apellidos</label>
+                        <input type="text" placeholder="Apellidos" name="lastnamea" class="forminput">
+                    </div>
+                 </div>   
+                 <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">Sexo</label>
+                        <select name="sexa" class="forminput">
+                            <option value="1">Hombre</option>
+                            <option value="2">Mujer</option>
+                            <option value="5">Otro</option>
+                        </select>
+                    </div>
+    
+                    <div class="support__form__div">
+                        <label class="formlabel">Edad aproximada</label>
+                        <input type="text" placeholder="Edad" name="agea" class="forminput">
+                    </div>
+                 </div>
+
+                 <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">Tipo de persona</label>
+                        <select name="persona" class="forminput">
+                            <option value="1">Estudiante</option>
+                            <option value="2">Colaborador (diferente a profesor(a))</option>
+                            <option value="3">Profesora o Profesor</option>
+                            <option value="4">Alguien externx</option>
+                        </select>
+                    </div>
+    
+                    <div class="support__form__div">
+                        <label class="formlabel">Celular</label>
+                        <input type="text" placeholder="Celular" name="celphonea" class="forminput">
                      
-                <input type="button" value="Regresar">
-                <input type="button" value="Siguiente">
+                    </div>
+                    
+                </div>
+
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">Correo electrónico</label>
+                        <input type="email" placeholder="Correo electrónico" name="emaila" class="forminput">    
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                      
+                        <label class="formlabel">Observaciones o datos adicionales</label>
+                        <textarea placeholder="Narrar caracteristicas físicas o datos relevantes del agresor" name="observations" class="forminput"></textarea>
+                        
+                       </div>
+                    
+                </div>
+              
+                <div class="support__form__button">
+                    <input type="button" value="Regresar" class="button-1support">
+                    <input type="button" value="Siguiente" class="button-2support">
+
+                </div>
+
+              
+               
+
+              
+
+            </div>
+        </fieldset>
+
+        <fieldset class="support__form">
+
+            <div class="support__form__left">
+                <div class="support__form__divbrand">
+                    <img src="./sources/moira-brand.svg" class="support__form__brand">
+                </div>
+                <div>
+                    <h5>
+                        Datos del agresor
+                    </h5>
+                    <p>
+                        Estos datos puede que no los tengas, por lo que no son obligatorios para avanzar con el caso y poder generar reparaciones. No obstante, es importante que si cuenta con alguno de ellos, sean suministrados para facilitar la agilidad del caso. </p>
+
+                </div>
+                <div>
+                    <h5>
+                        ¡Importante!
+                    </h5>
+                    <p>
+                        Recuerda que estos datos son para generar un caso robusto y contar con la mayor cantidad de información, pero no implican la confrontación de su agresor o la notificación del mismo.</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="support__form__right">
+                <div class="support__form__tracking">
+                    <div class="support__form__tracking__round1"></div>
+                    <div class="support__form__tracking__round2"></div>
+                    <div class="support__form__tracking__round3"></div>
+                    <div class="support__form__tracking__round4"></div>
+                </div>
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">Fecha de los hechos</label>
+                        <input class="forminput" type="date" placeholder="DD/MM/AAAA" name="factsdate">
+        
+                    </div>
+    
+                    <div class="support__form__div">
+                        <label class="formlabel">Hora de los hechos</label>
+                        <input class="forminput" type="time" name="factshour">
+        
+                    </div>
+
+                </div>
+                
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">Tipo de violencia</label>
+                        <select  class="forminput" name="violence">
+                            <option value="1">Violencia Física</option>
+                            <option value="2">Violencia Psicológica</option>
+                            <option value="3">Violencia Patrimonial o Económica</option>
+                            <option value="4">Violencia Sexual</option>
+                            <option value="4">Violencia Simbólica</option>
+                        </select>
+                    </div>
+    
+                    <div class="support__form__div">
+                        <label class="formlabel">Lugar de los hechos </label>
+                        <input class="forminput" type="text" placeholder="Lugar" name="place">
+         
+                    </div>
+
+                </div>
+                
+                <div class="support__form__row">
+                    <div class="support__form__div">
+                        <label class="formlabel">¿Se utilizó alguna arma?</label>
+                    <select class="forminput" name="guns">
+                        <option value="1">Arma blanca (Objetos cortopunzantes)</option>
+                        <option value="2">Arma de fuego </option>
+                        <option value="3">Otro</option>
+                        <option value="4">No se utilizó arma</option>
+                    </select>
+    
+                    </div>
+
+                </div>
+                
+                <div class="support__form__row">
+
+                    <div class="support__form__div">
+                        <label class="formlabel">Detalles del caso y hechos</label>
+                        <textarea class="forminput" placeholder="Narrar descriptivamente lo sucedido" name="factsdescription"> </textarea>
+                        
+                    </div>
+                </div>
+
+               
+
+               
+           
+                
+
+               <div class="support__form__button">
+                <input type="button" value="Regresar" class="button-1support">
+                <input type="button" value="Siguiente" class="button-2support">
+               </div>
+               
+
+              
+
+               
+                
+                   
+           
 
             </div>
         </fieldset>
         
-        <fieldset>
+        <fieldset class="support__formfinal">
             <div>
-                <img src="./sources/moira-brand.svg">
-                <h2>MOIRA</h2>
+                <img src="./sources/grouppeople.svg">
+                <h5>Información final</h5>
             </div>
             <div>
-                <input type="button" value="Regresar">
-                <input type="submit" value="Enviar">
+                   <p>Desde MOIRA lamentamos el hecho y que haya pasado por una situación de Violencia basada en Género en la Universidad ICESI y agradecemos su confianza. 
+
+                    <br><br>Estaremos pendiente de su caso, por lo que le invitamos estar pendiente del historial de apoyo o del mecanismo que definió previamente para ser contactadx. 
+                    
+                    <br><br> En caso de necesitar atención priorizada, le invitamos asistir a los espacios de escucha de Bienestar Universitario 
+                    
+                    <br><br><b>Estamos atentas de usted</b> </p> 
+
+            </div>
+            <div class="support__form__button">
+                <input type="button" value="Regresar" class="button-1support">
+                <input type="submit" value="Enviar" class="button-2support">
             </div>
         </fieldset>
     </form>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__rect_fucsia"></div>
+        <div class="footer__settings">
+            <div class="footer__part1">
+                <div>
+                    <a href="./index.html"><img class="footer_logo" id="logofooter"  src="./sources/moira-brand.svg" alt="Logo Ruta MOIRA"></a>
+                </div>
+                <div>
+                    <h5>#Yomesumo</h5>
+                </div>
+                <div>
+                    <ul class="footer__part1__socialmedia">
+                        <li><img src="./sources/instagram.svg"></li>
+                        <li><img src="./sources/facebook.svg"></li>
+                        <li><img src="./sources/twitter.svg"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__part2">
+                <h5>
+                    Menú
+                </h5>
+                <ul class="footer_map">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./moira.html">MOIRA</a></li>
+                    <li><a href="./aprendamos.html">Aprendamos</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./apoyo.html">Apoyo</a></li>
+                    <li><a href="./perfil.html">Perfil</a></li>
+                </ul>
+            </div>
+            <div class="footer__part3">
+                <h5>Contáctanos</h5>
+                <p>
+                    <b>Érika Marquez</b> <br>
+                    Directora del programa de Sociología <br>
+                    <b>Correo:</b> emarquez@icesi.edu.co <br>
+                </p>
+            </div>
+        </div>
+        <div class="footer__part4">
+            <div>
+                <p>Apoya</p>
+                <img class="footer__part4__brand" src="./sources/icesi-brand.svg" alt="logo Icesi y Programa de estudios de género">
+            </div>
+            <div class="footer__part4__caption">
+                <caption>TODOS LOS DERECHOS RESERVADOS 2022© <br>
+                DISEÑO REALIZADO POR OSCAR GIRALDO</caption>
+            </div>
+        </div>
+        <div class="footer__rainbow">
+            <div class="footer__rainbow__red"></div>
+            <div class="footer__rainbow__orange"></div>
+            <div class="footer__rainbow__yellow"></div>
+            <div class="footer__rainbow__green"></div>
+            <div class="footer__rainbow__blue"></div>
+            <div class="footer__rainbow__purple"></div>
+        </div>
+    </footer>
     <script src="./js/utils.js"></script>
     <script type="module" src="./js/support.js"></script>
     <script type="module" src="./js/authpage.js"></script>
