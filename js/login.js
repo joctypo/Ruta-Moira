@@ -1,26 +1,14 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
-import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const auth = getAuth();
-
-
 const loginForm = document.getElementById("loginform");
 const registerbutton = document.getElementById("registerbutton");
 
-
-
-/*const login = async (email, password) => {
+const login = async (email, password) => {
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password);
         const userInfo = await getUserInfo(user.uid);
         alert("Ingresó con éxito");
         window.open("./index.html","_self");
     } catch (e) { }
-}*/
+}
 
 const getUserInfo = async (userId) => {
     try {
@@ -49,7 +37,7 @@ loginForm.addEventListener("submit", e => {
     if (email && password) {
        /* alert("eso mamona");
         login(email, password);*/
-        auth().signInWithEmailAndPassword(email,password).then(
+        firebase.auth().signInWithEmailAndPassword(email,password).then(
             ()=>{
                 setLoggedUser(auth.currentUser);
     
