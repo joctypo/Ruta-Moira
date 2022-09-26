@@ -153,6 +153,10 @@ p {
   display: flex;
   flex-direction: column;
 }
+.auth__form__buttons {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 .formlabel {
   font-family: "Overpass", sans-serif;
@@ -198,7 +202,7 @@ p {
   font-size: 16px;
   border-radius: 100px;
   width: 100%;
-  margin: 42px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .button-1:hover {
   background-color: #4D71CD;
@@ -234,7 +238,7 @@ p {
   font-size: 16px;
   border-radius: 100px;
   width: 100%;
-  margin: 16px 0px;
+  margin: 24px 0px 16px 0px;
 }
 .button-2:hover {
   background-color: #FFB9F0;
