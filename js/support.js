@@ -1,8 +1,8 @@
-import {collection, addDoc} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import {collection, addDoc, setDoc} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 import {db} from "./firebase.js";
 
 // Declaración de cada formulario realizado 
-const supportform = document.getElementById("support");
+const supportform = document.getElementById("supportform");
 const fssr2 = document.getElementById("fssr2");
 const fssr3 = document.getElementById("fssr3");
 const fssr4 = document.getElementById("fssr4");
@@ -17,10 +17,10 @@ const fssa5 = document.getElementById("fssa5");
 
 
 //Creation of case
-const createcase = async (userFields) => {
+const createcase = async (userFields,email) => {
    
     try {
-
+        console.log(email);
         await addDoc(collection(db,"cases"), userFields);
        
     } catch (e) {
@@ -138,13 +138,13 @@ supportform.addEventListener("submit", e => {
 
  
     //Part 4 Form
-    const factsdate = supportform.factsdate.value;
-    const factshour = supportform.factshour.value;
-    const violence = supportform.violence.value;
-    const place = supportform.place.value;
-    const guns = supportform.guns.value;
-    const factsdescription = supportform.factsdescription.value;
-
+    var factsdate = supportform.factsdate.value;
+    var factshour = supportform.factshour.value;
+    var violence = supportform.violence.value;
+    var place = supportform.place.value;
+    var guns = supportform.guns.value;
+    var factsdescription = supportform.factsdescription.value;
+    console.log(factsdate);
 
     if (name && lastname && cedula && email && person) {
         //alert("subiendo caso");
@@ -182,7 +182,7 @@ supportform.addEventListener("submit", e => {
             guns,
             factsdescription,
             status:"Enviado",
-        });
+        },email);
     }else{
         alert("no se creo");
     }
