@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
 
 </head>
 <body>
@@ -23,6 +24,29 @@
                 <li><a href="./apoyo.html">Apoyo</a></li>
                 <li><a href="./perfil.html">Perfil</a></li>
             </ul>
+        </nav>
+
+        <nav class="nav_mobile">
+            <a href="./index.html"><img class="nav_mobile_logo" id="logo"  src="./sources/moira-brand.svg" alt="Logo Ruta MOIRA"></a>
+           
+            <div>
+                <img class="nav_mobile_menu" id="menubutton" src="./sources/menu.svg">
+                <img class="nav_mobile_menu2" id="closemenu"src="./sources/menu_open.svg">
+            </div>
+           
+            <div> 
+                <ul class="nav_mobile_list" id="mobile_list">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./moira.html">MOIRA</a></li>
+                    <li><a href="./aprendamos.html">Aprendamos</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./apoyo.html">Apoyo</a></li>
+                    <li><a href="./perfil.html">Perfil</a></li>
+                </ul>
+
+            </div>
+         
+
         </nav>
     </header>
     <div class="banner"> 
@@ -137,6 +161,7 @@
     <script src="./js/utils.js"></script>
     <script type="module" src="./js/user.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
     
 </body>
 </html>

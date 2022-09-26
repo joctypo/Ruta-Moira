@@ -18,6 +18,10 @@ body {
   width: 70%;
 }
 
+.nav_mobile {
+  display: none;
+}
+
 .index__part1 {
   display: flex;
   flex-direction: row;
@@ -25,7 +29,7 @@ body {
   margin: 5em 0em;
 }
 .index__part1__brand {
-  width: 50%;
+  width: 30em;
   display: flex;
   justify-content: end;
   padding: 0em 3em 0em 20%;
@@ -443,7 +447,6 @@ p {
   text-align: center;
   padding: 0px 20%;
   color: #FFFFFF;
-  height: 100vh;
 }
 .support__formfinal div {
   margin-top: 2rem;

@@ -1,0 +1,138 @@
+@media all and (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+  .nav_logo {
+    margin: 1.3rem 0;
+    z-index: 30;
+  }
+  .nav_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #FCF9F5;
+  }
+  .nav_mobile_logo {
+    width: 12em;
+    margin: 16px;
+  }
+  .nav_mobile a {
+    text-decoration: none;
+    color: #662D91;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .nav_mobile div {
+    background: #FFDAF7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav_mobile li {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+  }
+  .nav_mobile ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: none;
+  }
+  .nav_mobile li:hover {
+    background: #FFB9F0;
+    border-radius: 10px;
+  }
+  .nav_mobile_menu {
+    width: 4em;
+    height: 4em;
+  }
+  .nav_mobile_menu2 {
+    width: 4em;
+    height: 4em;
+    display: none;
+    justify-content: center;
+  }
+  .footer__settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__part1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__part2 {
+    width: 100%;
+    margin: 0;
+  }
+  .footer__part3 {
+    width: 100%;
+  }
+  .support__form1 {
+    flex-direction: column;
+  }
+  .support__form1__left {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .support__form1__right {
+    width: auto;
+    padding: 3em 1em 2em 1em;
+  }
+  .support__form {
+    flex-direction: column;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+  }
+  .support__form__left {
+    width: auto;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .support__form__right {
+    width: auto;
+    padding: 3em 16px 2em 16px;
+  }
+  .support__form__row {
+    flex-direction: column;
+    width: auto;
+  }
+  .support__form__div {
+    width: auto;
+    padding: 0.3rem 0rem;
+  }
+  .support__form__button {
+    flex-direction: column-reverse;
+  }
+  .support__formfinal {
+    border-radius: 0px;
+    margin: 0px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 16px;
+  }
+  .support__formfinal div {
+    margin-top: 2rem;
+  }
+  .support__formfinal img {
+    margin-bottom: 2rem;
+    width: 20rem;
+  }
+}
+.button-1support {
+  width: auto;
+  margin: 16px;
+}
+
+.button-2support {
+  width: auto;
+  margin: 16px;
+}
+
+/*# sourceMappingURL=mobile.css.map */
