@@ -1,3 +1,7 @@
+import {collection, addDoc} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import {db} from "./firebase.js";
+
+// Declaración de cada formulario realizado 
 const supportform = document.getElementById("support");
 const fssr2 = document.getElementById("fssr2");
 const fssr3 = document.getElementById("fssr3");
@@ -10,89 +14,94 @@ const fssa3 = document.getElementById("fssa3");
 const fssa4 = document.getElementById("fssa4");
 const fssa5 = document.getElementById("fssa5");
 
-//Collect information
+
+
+//Creation of case
 const createcase = async (userFields) => {
-    //const user = auth.currentUser;
-   // const uid = user.uid;
+   
     try {
 
-        await addDoc(collection(db,"cases"/*uid*/), userFields);
-       // window.open("./login.html","_self");
+        await addDoc(collection(db,"cases"), userFields);
+       
     } catch (e) {
         alert("No se puedo enviar")
     }
     
 };
 
-fssr2.addEventListener("click", e=>{
 
+
+//Botones de avanzar y regresar
+fssr2.addEventListener("click", e=>{
+    window.scrollTo(0,0); 
     document.getElementById("fss2").style.display = "none";
-    document.getElementById("fss1").style.display = "flex";  
-    
-})
+    document.getElementById("fss1").style.display = "flex"; 
+});
 
 fssr3.addEventListener("click", e=>{
-
+    window.scrollTo(0,0); 
     document.getElementById("fss3").style.display = "none";
     document.getElementById("fss2").style.display = "flex";  
-
-})
+    
+});
 
 fssr4.addEventListener("click", e=>{
 
     document.getElementById("fss4").style.display = "none";
     document.getElementById("fss3").style.display = "flex";  
-
-})
+    window.scrollTo(0,0); 
+});
 
 fssr5.addEventListener("click", e=>{
-
+    window.scrollTo(0,0); 
     document.getElementById("fss5").style.display = "none";
     document.getElementById("fss4").style.display = "flex";  
 
-})
+});
 
 fssr6.addEventListener("click", e=>{
-
+    window.scrollTo(0,0); 
     document.getElementById("fss6").style.display = "none";
     document.getElementById("fss5").style.display = "flex";  
 
-})
+});
 
 fssa1.addEventListener("click", e=>{
-
+    window.scrollTo(0,0); 
     document.getElementById("fss1").style.display = "none";
     document.getElementById("fss2").style.display = "flex";  
 
-})
+});
 
 fssa2.addEventListener("click", e=>{
-
+    window.scrollTo(0,0); 
     document.getElementById("fss2").style.display = "none";
     document.getElementById("fss3").style.display = "flex";  
 
-})
+});
 
 fssa3.addEventListener("click", e=>{
-
+    window.scrollTo(0,0); 
     document.getElementById("fss3").style.display = "none";
     document.getElementById("fss4").style.display = "flex";  
 
-})
+});
 
 fssa4.addEventListener("click", e=>{
-
+    window.scrollTo(0,0); 
     document.getElementById("fss4").style.display = "none";
     document.getElementById("fss5").style.display = "flex";  
 
-})
+});
 
 fssa5.addEventListener("click", e=>{
-
+    window.scrollTo(0,0); 
     document.getElementById("fss5").style.display = "none";
     document.getElementById("fss6").style.display = "flex";  
 
-})
+});
+
+
 
 supportform.addEventListener("submit", e => {
     e.preventDefault();
