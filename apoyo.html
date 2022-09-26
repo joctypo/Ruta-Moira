@@ -7,6 +7,7 @@
     <title>Apoyo Ruta Moira</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="shortcut icon" href="./sources/icon.svg">
 </head>
 <body id="support">
     <header>
@@ -17,10 +18,31 @@
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./moira.html">MOIRA</a></li>
                 <li><a href="./aprendamos.html">Aprendamos</a></li>
-                <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./apoyo.html">Apoyo</a></li>
                 <li><a href="./profile.html">Perfil</a></li>
             </ul>
+        </nav>
+        <nav class="nav_mobile">
+            <a href="./index.html"><img class="nav_mobile_logo" id="logo"  src="./sources/moira-brand.svg" alt="Logo Ruta MOIRA"></a>
+           
+            <div>
+                <img class="nav_mobile_menu" id="menubutton" src="./sources/menu.svg">
+                <img class="nav_mobile_menu2" id="closemenu"src="./sources/menu_open.svg">
+            </div>
+           
+            <div> 
+                <ul class="nav_mobile_list" id="mobile_list">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./moira.html">MOIRA</a></li>
+                    <li><a href="./aprendamos.html">Aprendamos</a></li>
+                    
+                    <li><a href="./apoyo.html">Apoyo</a></li>
+                    <li><a href="./perfil.html">Perfil</a></li>
+                </ul>
+
+            </div>
+         
+
         </nav>
     </header>
     <form id="support" class="support">
@@ -617,6 +639,6 @@
     <script src="./js/utils.js"></script>
     <script type="module" src="./js/support.js"></script>
     <script type="module" src="./js/authpage.js"></script>
-
+    <script src="./js/menu.js"></script>
 </body>
 </html>
