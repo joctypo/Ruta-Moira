@@ -8,7 +8,9 @@ const db = getFirestore(app);
 const auth = getAuth();
 
 
-const loginForm = document.getElementById("login");
+const loginForm = document.getElementById("loginform");
+const registerbutton = document.getElementById("registerbutton");
+
 
 
 /*const login = async (email, password) => {
@@ -35,6 +37,9 @@ const logout = async () => {
     } catch (e) { }
 }
 
+registerbutton.addEventListener("click", e=>{
+    window.open("./register.html","_self");
+});
 
 loginForm.addEventListener("submit", e => {
     e.preventDefault();
