@@ -49,7 +49,7 @@ loginForm.addEventListener("submit", e => {
     if (email && password) {
        /* alert("eso mamona");
         login(email, password);*/
-        auth.signInWithEmailAndPassword(email,password).then(
+        auth().signInWithEmailAndPassword(email,password).then(
             ()=>{
                 setLoggedUser(auth.currentUser);
     
