@@ -21,7 +21,7 @@ registerForm.addEventListener("submit", e => {
     var university = registerForm.university.value;
     var person = registerForm.person.value;
     var celphone = registerForm.celphone.value;
-    var datamoira = registerForm.datamoira.value;
+    //var datamoira = registerForm.datamoira.value;
     var email = registerForm.email.value;
     var password = registerForm.password.value;
     
