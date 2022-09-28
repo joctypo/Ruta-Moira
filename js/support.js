@@ -22,13 +22,14 @@ var name,lastname,cedula,borndate,city,celphone,addres,email,person;
 
 var uid;
 
+//Verifica que el usuario haya ingresado
 onAuthStateChanged(auth, (user) => {
     if (user) {
       
       uid = user.uid;
 
     } else { 
-  
+        window.open("./login.html","_self");
     }
   });
 

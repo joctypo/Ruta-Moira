@@ -286,7 +286,7 @@ p {
 }
 
 #login {
-  background-color: #29ABE2;
+  background-color: #74CBF0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -762,7 +762,7 @@ fieldset {
 
 #casesstatus {
   padding: 0.5em 1em;
-  background: #84C7AC;
+  background: #304F9D;
   color: #FFFFFF;
   font-weight: 500;
   border-radius: 8px;

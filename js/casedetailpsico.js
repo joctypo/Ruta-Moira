@@ -18,10 +18,17 @@ function getParam(param){
 }
 
 //Verifica que tengamos usuarios
-onAuthStateChanged(auth, async (user) => {
+  onAuthStateChanged(auth, (user) => {
     if (user) {
       //alert(user);
-      getcase("id");
+      useruid = user.uid
+  
+      if(useruid === "f7qXiyg7wtSCH8V4o5c6GV7GOVX2"|| "eBX8O0I8zBSa6eBJNcCOnTC3BK12" || "4ocanvLnAfghydq1hVWQg0tOXBI3"){
+        getcase("id");
+        window.open("#","_self");
+      }else{
+        window.open("./index.html","_self");
+      }
     } else { 
       window.open("./login.html","_self");
     }

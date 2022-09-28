@@ -9,6 +9,13 @@
   #formchange div {
     width: 100%;
   }
+  .auth__form {
+    margin: 16px;
+    padding: 24px 16px;
+  }
+  .brand img {
+    width: 100%;
+  }
   .nav_mobile {
     display: flex;
     flex-direction: column;

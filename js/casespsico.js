@@ -6,7 +6,9 @@ var useruid;
 let casesViolence = [];
 
 const casesSection = document.getElementById("tablecases");
-
+const csa = document.getElementById("csa");
+const cscr = document.getElementById("cscr");
+const creation= document.getElementById("creation");
 
 //Verificamos que tengamos un usuario
 onAuthStateChanged(auth, (user) => {
@@ -89,29 +91,73 @@ async function loadCases(){
 
 
 
-//Aquí filtramos los casos del usuario 
-async function filtersAction(){
+//Aquí filtramos los casos del usuario  abiertos
+async function filtersAction1(){
 
-    const filterValue = uid;
+    const filterValue = "Caso Cerrado";
 
     let sortedCases = [];
 
 
     //--------Listar por usuario------ 
-    sortedCases = casesViolence.filter((everycase) => everycase.uid === filterValue);
+    sortedCases = casesViolence.filter((everycase) => everycase.status !== filterValue);
     console.log(sortedCases);
-    
+  
+    sortedCases.forEach(item => {
+      rendercases(item);
+    })
 
 }
 
 
 
-/*const querySnapshot = await getDocs(collection(db, "cases"));
-querySnapshot.forEach((doc) => {
+//Aquí filtramos los casos del usuario cerrados
+async function filtersAction2(){
+
+  const filterValue = "Caso Cerrado";
+
+  let sortedCases = [];
 
 
-  console.log(`${doc.id} => ${doc.data()}`);
+  //--------Listar por usuario------ 
+  sortedCases = casesViolence.filter((everycase) => everycase.status === filterValue);
+  console.log(sortedCases);
+
+  sortedCases.forEach(item => {
+    rendercases(item);
+  })
+
+}
+
+
+
+//Botón de CSA
+csa.addEventListener("click", ()=>{
+
+  filtersAction1();
+
+
 });
-*/
+
+
+//Botón de CSCR 
+cscr.addEventListener("click", ()=>{
+
+  filtersAction2();
+
+});
+
+
+//Botón apoyo
+creation.addEventListener("click" , ()=>{
+
+  window.open("./apoyo.html","_blank");
+
+});
+
+
+
+
+
 
 loadCases();

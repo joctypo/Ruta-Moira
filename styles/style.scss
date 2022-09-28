@@ -366,7 +366,7 @@ p{
 
 
 #login{
-    background-color: $blue-1;
+    background-color: $blue-2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -917,7 +917,7 @@ fieldset{
 
 #casesstatus{
     padding: 0.5em 1em;
-    background: $complementary-green;
+    background: $primary-color-1;
     color: $neutral-color-6;
     font-weight: 500;
     border-radius: 8px;
@@ -951,9 +951,7 @@ fieldset{
         p{
             margin: 8px;
         }
-        caption{
-           
-        }
+      
 
     }
 }
