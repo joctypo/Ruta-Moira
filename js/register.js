@@ -32,7 +32,6 @@ registerForm.addEventListener("submit", e => {
             institution: university,
             person: person,
             celphone: celphone,
-            datamoira: datamoira,
             rol: "estudiante",
     }
 
