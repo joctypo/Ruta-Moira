@@ -16,6 +16,7 @@ const fssa2 = document.getElementById("fssa2");
 const fssa3 = document.getElementById("fssa3");
 const fssa4 = document.getElementById("fssa4");
 const fssa5 = document.getElementById("fssa5");
+const fssa6 = document.getElementById("fssa6");
 
 var name,lastname,cedula,borndate,city,celphone,addres,email,person; 
 
@@ -157,6 +158,8 @@ fssa5.addEventListener("click", e=>{
 
 supportform.addEventListener("submit", e => {
     e.preventDefault();
+
+    
     //Part 1 Form
     //Verificamos si es anónima la denuncia para no guardar ciertos datos
     var checkanon = document.getElementById("checkanon").checked;
@@ -260,4 +263,16 @@ supportform.addEventListener("submit", e => {
     }else{
         alert("no se creo");
     }
+
+});
+
+
+fssr6.addEventListener("click", ()=> {
+    fssr6.disabled = true;
+    
+    setTimeout(() => {
+      fssr6.disabled = false;
+      
+    }, 3000);
+
 });
