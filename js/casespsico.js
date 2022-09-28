@@ -1,6 +1,6 @@
 import {collection, getDocs} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 import {db, auth} from "./firebase.js";
-import {onAuthStateChanged,singOut} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+import {onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 
 var useruid;
 let casesViolence = [];
@@ -29,7 +29,7 @@ onAuthStateChanged(auth, (user) => {
 //Cerrar sesión psicologo
   logout.addEventListener("click",()=>{
 
-    singOut(auth).then(()=>{
+    signOut(auth).then(()=>{
         alert("Se cerró su sesión correctamente");
     
     }).catch((error) =>{
