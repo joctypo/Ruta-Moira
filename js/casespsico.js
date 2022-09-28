@@ -1,28 +1,33 @@
 import {collection, getDocs} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
-import {db} from "./firebase.js";
-import {auth} from "./firebase.js";
-import {onAuthStateChanged ,singOut} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+import {db, auth} from "./firebase.js";
+import {onAuthStateChanged,singOut} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 
-var uid;
+var useruid;
 let casesViolence = [];
 
 const casesSection = document.getElementById("tablecases");
-const logout = document.getElementById("logout");
 
-//Conocer actual usuario en el dispositivo 
+
+//Verificamos que tengamos un usuario
 onAuthStateChanged(auth, (user) => {
     if (user) {
       //alert(user);
-      uid = user.uid;
-      window.open("#","_self");
+      useruid = user.uid
+  
+      if(useruid === "f7qXiyg7wtSCH8V4o5c6GV7GOVX2"|| "eBX8O0I8zBSa6eBJNcCOnTC3BK12" || "4ocanvLnAfghydq1hVWQg0tOXBI3"){
+        window.open("#","_self");
+      }else{
+        window.open("./index.html","_self");
+      }
+      
     } else { 
       window.open("./login.html","_self");
     }
   });
 
-  
-//Cerrar sesion
-logout.addEventListener("click",()=>{
+
+//Cerrar sesión psicologo
+  logout.addEventListener("click",()=>{
 
     singOut(auth).then(()=>{
         alert("Se cerró su sesión correctamente");
@@ -35,12 +40,12 @@ logout.addEventListener("click",()=>{
 
 });
 
+
 //Aquí se pintan los casos 
 function rendercases(cases){
     const casos = document.createElement("a");
     casos.className = "casos"; 
-    casos.setAttribute("href", `./casesdetails.html?id=${cases.id}`);
-
+    casos.setAttribute("href", `./casedetailpsico.html?id=${cases.id}`);
 
     casos.innerHTML = `
     <div class = "casos__card">
@@ -50,13 +55,13 @@ function rendercases(cases){
         <p>${cases.violence}</p>
         <caption> Estado </caption>
         <p id="casesstatus">${cases.status}</p>
-        
         <img src="./sources/View.svg">
         <caption> Ver </caption>
     </div>
 `;
     casesSection.appendChild(casos);
 }
+
 
 async function loadCases(){
 
@@ -73,8 +78,11 @@ async function loadCases(){
     } catch (e){
         console.log(e);
     }
+    casesSection.innerHTML = "";
+    casesViolence.forEach(everycase => {
+        rendercases(everycase);
+    });
 
-    filtersAction();
 }
 
 
@@ -93,13 +101,6 @@ async function filtersAction(){
     sortedCases = casesViolence.filter((everycase) => everycase.uid === filterValue);
     console.log(sortedCases);
     
-    casesSection.innerHTML = "";
-    sortedCases.forEach(everycase => {
-        rendercases(everycase);
-    });
-
-
-
 
 }
 

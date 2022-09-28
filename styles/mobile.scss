@@ -8,6 +8,12 @@
         }
     }
 
+    #formchange{
+        div{
+            width: 100%;
+        }
+    }
+
     .nav_mobile{
         display: flex;
         flex-direction: column;
@@ -251,7 +257,11 @@
         margin: 16px;
     }
 
+    .div__button{
+        flex-direction: column;
+    }
 
+  
 
 }
 

@@ -226,6 +226,23 @@ p {
   background-color: #4D71CD;
 }
 
+.button-case {
+  background-color: #FF92E8;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 100px;
+  margin: 1rem;
+}
+.button-case:hover {
+  background-color: #4D71CD;
+}
+
 .button-2 {
   background-color: #FF92E8;
   border: none;
@@ -586,6 +603,27 @@ p {
   flex-direction: row;
 }
 
+.div__button {
+  display: flex;
+  justify-content: center;
+}
+
+#divmoira {
+  display: flex;
+  justify-content: center;
+}
+
+#moirabrandcases {
+  width: 10rem;
+  margin: 24px 0px 0px 0px;
+}
+
+#line {
+  height: 0.5em;
+  background: #74CBF0;
+  margin: 16px 0px;
+}
+
 fieldset {
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -626,6 +664,133 @@ fieldset {
 
 #t23 {
   background: #FF92E8;
+}
+
+#casespage {
+  background: #FCF9F5;
+}
+
+#TittlerPerfil {
+  background: #662D91;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 16px;
+  margin: 2rem;
+}
+
+#tuscasos {
+  align-items: center;
+  color: #304F9D;
+  text-align: center;
+}
+
+#tablecases {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  justify-content: center;
+}
+#tablecases a {
+  text-decoration: none;
+}
+
+.casedetail {
+  background: #FCF9F5;
+}
+.casedetail__div {
+  margin: 2em 10%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.casedetail__div img {
+  height: 20px;
+  margin: 0px 16px 0px 0px;
+}
+.casedetail__div a {
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-size: 24px;
+}
+
+#formchange {
+  background: #FFFFFF;
+  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 10%;
+  padding: 2rem;
+  align-items: center;
+  width: auto;
+  border-radius: 1rem;
+}
+#formchange div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.casesinfo {
+  background: #FFFFFF;
+  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 10%;
+  align-items: center;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 1rem;
+  padding: 2em 5em;
+  color: #662D91;
+}
+.casesinfo p {
+  margin: 0px 0px 16px 0px;
+}
+.casesinfo h5 {
+  background: #FF92E8;
+  color: #FFFFFF;
+  padding: 12px 0px;
+  margin: 16px;
+  border-radius: 0.5em;
+}
+
+#casesstatus {
+  padding: 0.5em 1em;
+  background: #84C7AC;
+  color: #FFFFFF;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.casos__card {
+  color: #662D91;
+  background: #FFFFFF;
+  margin: 12px;
+  border-radius: 16px;
+  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+.casos__card img {
+  width: 40px;
+  height: 40px;
+  margin: 16px 0px;
+}
+.casos__card p {
+  margin: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

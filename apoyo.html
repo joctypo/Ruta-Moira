@@ -115,6 +115,8 @@
                         <div class="support__form__tracking__round4"></div>
                     </div>
                     <div>
+
+                        <div class="support__form__check"><caption>Los datos marcados con * son obligatorios para este proceso<br><br></caption></div>
                         <div class="support__form__row">
                             <div class="support__form__div">
                                 <label class="formlabel">Nombres</label>
@@ -128,8 +130,8 @@
                        
                         <div class="support__form__row">
                             <div class="support__form__div">
-                                <label class="formlabel">Cédula o Tarjeta de identidad</label>
-                                <input type="text" placeholder="Cédula" name="cedula" class="forminput">   
+                                <label class="formlabel">Documento de identidad</label>
+                                <input type="text" placeholder="Número de identidad" name="cedula" class="forminput">   
                             </div>
                             <div class="support__form__div">
                                 <label class="formlabel">Fecha de nacimiento</label>
@@ -140,14 +142,22 @@
                         
                         <div class="support__form__row">
                             <div class="support__form__div">
-                                <label class="formlabel">Ciudad de residencia</label>
+                                <label class="formlabel">Ciudad de residencia*</label>
                                  <select name="city" class="forminput">
-                                <option value="1">Cali</option>
-                                <option value="2">Palmira</option>
+                                 <option value="null" selected>Seleccione una opción</option>  
+                                 <option value="Cali">Cali</option>
+                                 <option value="Palmira">Palmira</option>
+                                 <option value="Candelaria">Candelaria</option>
+                                 <option value="Cerrito">Cerrito</option>
+                                 <option value="Florida">Florida</option>
+                                 <option value="Jamundí">Jamundí</option>
+                                 <option value="La Cumbre">La Cumbre</option>
+                                 <option value="Pradera">Pradera</option>
+                                 <option value="Yumbo">Yumbo</option>
                                  </select>
                             </div>
                             <div class="support__form__div">
-                                <label class="formlabel">Celular</label>
+                                <label class="formlabel">Celular*</label>
                                 <input type="text" placeholder="Celular" name="celphone" class="forminput">    
                             </div>
     
@@ -163,7 +173,7 @@
                         <div  class="support__form__row">
     
                             <div class="support__form__div">
-                                <label class="formlabel">Correo electrónico</label>
+                                <label class="formlabel">Correo electrónico*</label>
                                  <input type="email" placeholder="Correo electrónico" name="email" class="forminput">
                            
                             </div>
@@ -172,11 +182,13 @@
                         <div class="support__form__row">
     
                             <div class="support__form__div">
-                                <label class="formlabel">Tipo de persona</label>
+                                <label class="formlabel">Tipo de persona*</label>
                                 <select name="person" class="forminput">
-                                    <option value="1">Estudiante</option>
-                                    <option value="2">Colaborador (diferente a profesor(a))</option>
-                                    <option value="3">Profesora o Profesor</option>
+                                    <option value="null" selected>Seleccione una opción</option>  
+                                    <option value="Estudiante">Estudiante</option>
+                                    <option value="Profesor/a">Profesora o Profesor</option>
+                                    <option value="Colaborador/a">Colaborador (diferente a profesor(a))</option>
+                                    
                                 </select>
                             </div>
                         </div>
@@ -184,8 +196,7 @@
     
                         <div class="support__form__check">
                             
-                            <input type="checkbox" name="check" class="support__form__check__box" >
-                            
+                            <input type="checkbox" name="check" class="support__form__check__box" id="checkanon">
                             <p>Desea realizar su asistencia de forma totalmente anónima</p>    
                         </div>
 
@@ -238,27 +249,30 @@
                     <div class="support__form__tracking__round4"></div>
                 </div>
                 <div>
+                    <div class="support__form__check"><caption>Los datos marcados con * son obligatorios para este proceso<br><br></caption></div>
                     <div class="support__form__row">
                         <div class="support__form__div">
-                            <label class="formlabel">Identidad de Género</label>
+                            <label class="formlabel">Identidad de Género*</label>
                             <select name="identity" class="forminput">
-                                <option value="1">Mujer</option>
-                                <option value="2">Hombre</option>
-                                <option value="3">Queer</option>
-                                <option value="4">Otro</option>
-                                <option value="5">Prefiero no decirlo</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Mujer">Mujer</option>
+                                <option value="Hombre">Hombre</option>
+                                <option value="Queer">Queer</option>
+                                <option value="Otro">Otro</option>
+                                <option value="Prefiere no decirlo">Prefiero no decirlo</option>
                             </select>
                         </div>
                         <div class="support__form__div">
-                            <label class="formlabel">Orientación sexual</label>
+                            <label class="formlabel">Orientación sexual*</label>
                             <select name="orientation" class="forminput">
-                                <option value="1">Heterosexual</option>
-                                <option value="2">Bisexual</option>
-                                <option value="3">Homosexual</option>
-                                <option value="3">Asexual</option>
-                                <option value="3">Pansexual</option>
-                                <option value="3">Otro</option>
-                                <option value="3">Prefiero no decirlo</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Heterosexual">Heterosexual</option>
+                                <option value="Homosexual">Homosexual</option>
+                                <option value="Bisexual">Bisexual</option>
+                                <option value="Asexual">Asexual</option>
+                                <option value="Pansexual">Pansexual</option>
+                                <option value="Otro">Otro</option>
+                                <option value="Prefiere no decirlo">Prefiero no decirlo</option>
                             </select>   
                         </div>
                     </div>
@@ -267,9 +281,11 @@
                         <div class="support__form__div">
                             <label class="formlabel">Pronombres de preferencia</label>
                             <select name="pronouns" class="forminput">
-                                <option value="1">Él</option>
-                                <option value="2">Ella</option>
-                                <option value="3">Elle</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Él">Él</option>
+                                <option value="Ella">Ella</option>
+                                <option value="Elle">Elle</option>
+
                             </select>   
                         </div>
                         <div class="support__form__div">
@@ -285,9 +301,11 @@
                         <div class="support__form__div">
                             <label class="formlabel">¿Por qué medio desea ser contactadx?</label>
                             <select name="contact" class="forminput">
-                                <option value="1">Celular</option>
-                                <option value="2">Correo</option>
-                                <option value="3">No deseo ser contactadx</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Celular">Celular</option>
+                                <option value="Correo">Correo</option>
+                                <option value="Correo o Celular">Correo o Celular</option>
+                                <option value="No desea ser contactadx">No deseo ser contactadx</option>
                             </select>
                
                         </div>
@@ -296,24 +314,27 @@
     
                     <div class="support__form__row">
                         <div class="support__form__div">
-                            <label class="formlabel">¿Presenta alguna diversidad funcional?</label>
+                            <label class="formlabel">¿Presenta alguna diversidad funcional?*</label>
                             <select name="diversity" class="forminput">
-                                <option value="1">Diversidad Motriz</option>
-                                <option value="2">Diversidad Auditiva</option>
-                                <option value="3">Diversidad visual</option>
-                                <option value="4">Diversidad Cognitiva</option>
-                                <option value="5">Diversidad Mental</option>
-                                <option value="6">Ninguna</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Ninguna">Ninguna</option>
+                                <option value="Diversidad Motriz">Diversidad Motriz</option>
+                                <option value="Diversidad Auditiva">Diversidad Auditiva</option>
+                                <option value="Diversidad Visual">Diversidad visual</option>
+                                <option value="Diversidad Cognitiva">Diversidad Cognitiva</option>
+                                <option value="Diversidad Mental">Diversidad Mental</option>
+                                
                             </select>
                         </div>
                     </div>
     
                     <div class="support__form__row">
                         <div class="support__form__div">
-                            <label class="formlabel">¿Desea asistencia por parte de alguno de nuestros psicólogos?</label>
+                            <label class="formlabel">¿Desea asistencia por parte de alguno de nuestros psicólogos?*</label>
                             <select name="helppsico" class="forminput">
-                                <option value="1">Sí</option>
-                                <option value="2">No</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Sí">Sí</option>
+                                <option value="No">No</option>
                             </select> 
                         </div>
                     </div>
@@ -364,6 +385,7 @@
                     <div class="support__form__tracking__round4"></div>
                 </div>
                 <div>
+                    <div class="support__form__check"><caption>Los datos marcados con * son obligatorios para este proceso<br><br></caption></div>
                     <div class="support__form__row">
                         <div class="support__form__div">
                             <label class="formlabel">Nombres</label>
@@ -377,28 +399,30 @@
                      </div>   
                      <div class="support__form__row">
                         <div class="support__form__div">
-                            <label class="formlabel">Sexo</label>
+                            <label class="formlabel">Sexo*</label>
                             <select name="sexa" class="forminput">
-                                <option value="1">Hombre</option>
-                                <option value="2">Mujer</option>
-                                <option value="5">Otro</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                                <option value="Otro">Otro</option>
                             </select>
                         </div>
         
                         <div class="support__form__div">
-                            <label class="formlabel">Edad aproximada</label>
+                            <label class="formlabel">Edad aproximada*</label>
                             <input type="text" placeholder="Edad" name="agea" class="forminput">
                         </div>
                      </div>
     
                      <div class="support__form__row">
                         <div class="support__form__div">
-                            <label class="formlabel">Tipo de persona</label>
+                            <label class="formlabel">Tipo de persona*</label>
                             <select name="persona" class="forminput">
-                                <option value="1">Estudiante</option>
-                                <option value="2">Colaborador (diferente a profesor(a))</option>
-                                <option value="3">Profesora o Profesor</option>
-                                <option value="4">Alguien externx</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="Colaborador/a">Colaborador (diferente a profesor(a))</option>
+                                <option value="Profesor/a">Profesora o Profesor</option>
+                                <option value="Alguien Externa">Alguien externo/a</option>
                             </select>
                         </div>
         
@@ -413,7 +437,7 @@
                     <div class="support__form__row">
                         <div class="support__form__div">
                             <label class="formlabel">Correo electrónico</label>
-                            <input type="email" placeholder="Correo electrónico" name="emaila" class="forminput">    
+                            <input type="text" placeholder="Correo electrónico" name="emaila" class="forminput">    
                             
                         </div>
                         
@@ -480,49 +504,64 @@
                 </div>
 
                 <div>
+                    <div class="support__form__check"><caption>Los datos marcados con * son obligatorios para este proceso<br><br></caption></div>
                     <div class="support__form__row">
                         <div class="support__form__div">
                             <label class="formlabel">Fecha de los hechos</label>
                             <input class="forminput" type="date" placeholder="DD/MM/AAAA" name="factsdate">
             
                         </div>
+                        
+                        <div class="support__form__div">
+                            <label class="formlabel">Lugar de los hechos*</label>
+                            <select  class="forminput" name="place">
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Dentro del campus">Dentro del campus universitario</option>
+                                <option value="Fuera del campus">Fuera del campus universitario</option>
+                                <option value="Alrededores del campus">Alrededores de la universidad</option>
+                                <option value="Otro">Otro</option>
+                               
+                            </select>
+                            
+             
+                        </div>
         
+                       
+    
+                    </div>
+                    
+                    <div class="support__form__row">
                         <div class="support__form__div">
                             <label class="formlabel">Hora de los hechos</label>
                             <input class="forminput" type="time" name="factshour">
             
                         </div>
-    
-                    </div>
-                    
-                    <div class="support__form__row">
                         <div class="support__form__div">
-                            <label class="formlabel">Tipo de violencia</label>
+                            <label class="formlabel">Tipo de violencia*</label>
                             <select  class="forminput" name="violence">
-                                <option value="1">Violencia Física</option>
-                                <option value="2">Violencia Psicológica</option>
-                                <option value="3">Violencia Patrimonial o Económica</option>
-                                <option value="4">Violencia Sexual</option>
-                                <option value="4">Violencia Simbólica</option>
+                                <option value="null" selected>Seleccione una opción</option>
+                                <option value="Violencia Física">Violencia Física</option>
+                                <option value="Violencia Sexual">Violencia Sexual</option>
+                                <option value="Violencia Simbólica">Violencia Simbólica</option>
+                                <option value="Violencia Psicológica">Violencia Psicológica</option>
+                                <option value="Violencia Económica">Violencia Patrimonial o Económica</option>
+                               
                             </select>
                         </div>
         
-                        <div class="support__form__div">
-                            <label class="formlabel">Lugar de los hechos </label>
-                            <input class="forminput" type="text" placeholder="Lugar" name="place">
-             
-                        </div>
     
                     </div>
                     
                     <div class="support__form__row">
                         <div class="support__form__div">
-                            <label class="formlabel">¿Se utilizó alguna arma?</label>
+                            <label class="formlabel">¿Se utilizó alguna arma?*</label>
                         <select class="forminput" name="guns">
-                            <option value="1">Arma blanca (Objetos cortopunzantes)</option>
-                            <option value="2">Arma de fuego </option>
-                            <option value="3">Otro</option>
-                            <option value="4">No se utilizó arma</option>
+                            <option value="null" selected>Seleccione una opción</option>
+                            <option value="No se utilizó arma">No se utilizó arma</option>
+                            <option value="Arma Blanca">Arma blanca (Objetos cortopunzantes)</option>
+                            <option value="Arma de fuego">Arma de fuego </option>
+                            <option value="Otro tipo de arma">Otra</option>
+                            
                         </select>
         
                         </div>
@@ -533,7 +572,7 @@
     
                         <div class="support__form__div">
                             <label class="formlabel">Detalles del caso y hechos</label>
-                            <textarea class="forminput" placeholder="Narrar descriptivamente lo sucedido" name="factsdescription"> </textarea>
+                            <textarea placeholder="Narrar descriptivamente lo sucedido" name="factsdescription" class="forminput" ></textarea>
                             
                         </div>
                     </div>
@@ -564,11 +603,11 @@
             <div>
                    <p>Desde MOIRA lamentamos el hecho y que haya pasado por una situación de Violencia basada en Género en la Universidad ICESI y agradecemos su confianza. 
 
-                    <br><br>Estaremos pendiente de su caso, por lo que le invitamos estar pendiente del historial de apoyo o del mecanismo que definió previamente para ser contactadx. 
+                    <br><br>Estaremos pendiente de su caso, por lo que le invitamos estar pendiente del historial de apoyo o del mecanismo que definió previamente para ser contactadx. Si realizo esta denuncia de forma anónima, agredecemos por su aporte a nuestra construcción de un campus más seguro 
                     
                     <br><br> En caso de necesitar atención priorizada, le invitamos asistir a los espacios de escucha de Bienestar Universitario 
                     
-                    <br><br><b>Estamos atentas de usted</b> </p> 
+                    <br><br><b >Estamos atentas de usted</b> </p> 
 
             </div>
             <div class="support__form__button">
@@ -603,9 +642,8 @@
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./moira.html">MOIRA</a></li>
                     <li><a href="./aprendamos.html">Aprendamos</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./apoyo.html">Apoyo</a></li>
-                    <li><a href="./perfil.html">Perfil</a></li>
+                    <li><a href="./profile.html">Perfil</a></li>
                 </ul>
             </div>
             <div class="footer__part3">

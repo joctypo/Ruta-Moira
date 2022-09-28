@@ -6,6 +6,9 @@
     margin: 1.3rem 0;
     z-index: 30;
   }
+  #formchange div {
+    width: 100%;
+  }
   .nav_mobile {
     display: flex;
     flex-direction: column;
@@ -191,6 +194,9 @@
   .button-2support {
     width: auto;
     margin: 16px;
+  }
+  .div__button {
+    flex-direction: column;
   }
 }
 

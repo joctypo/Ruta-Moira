@@ -27,7 +27,10 @@ loginForm.addEventListener("submit", e => {
 
                 //Signed in 
                 const user = userCredential.user;
+                
                 window.open("./index.html","_self");
+
+                
                 /*
                 db.ref('users/' + auth.currentUser.uid).once('value', (snapshot) => {
     
