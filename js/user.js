@@ -8,7 +8,7 @@ onAuthStateChanged(auth, (user) => {
     //alert(user);
     useruid = user.uid
 
-    if(useruid === "f7qXiyg7wtSCH8V4o5c6GV7GOVX2"|| "eBX8O0I8zBSa6eBJNcCOnTC3BK12" || "4ocanvLnAfghydq1hVWQg0tOXBI3"){
+    if(useruid === "f7qXiyg7wtSCH8V4o5c6GV7GOVX2"|| useruid === "eBX8O0I8zBSa6eBJNcCOnTC3BK12" || useruid=== "4ocanvLnAfghydq1hVWQg0tOXBI3"){
       window.open("./cases.html","_self");
     }else{
       window.open("#","_self");
