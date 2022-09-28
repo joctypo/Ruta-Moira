@@ -522,6 +522,7 @@ p {
   border-radius: 16px;
   margin: 2rem 10%;
   height: 100vh;
+  font-family: "Overpass", sans-serif;
 }
 .support__form__brand {
   width: 50%;
@@ -616,6 +617,12 @@ p {
 #moirabrandcases {
   width: 10rem;
   margin: 24px 0px 0px 0px;
+}
+
+.divcharts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #line {
@@ -791,6 +798,15 @@ fieldset {
 }
 .casos__card p {
   margin: 8px;
+}
+
+.everychart {
+  margin: 16px 16px;
+  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
+}
+
+#datagraphic {
+  background: #FCF9F5;
 }
 
 /*# sourceMappingURL=style.css.map */

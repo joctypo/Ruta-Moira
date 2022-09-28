@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de información MOIRA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="shortcut icon" href="./sources/icon.svg">
+</head>
+<body id="datagraphic">
+    <div id="divmoira"> <img src="./sources/moira-brand.svg" id="moirabrandcases"></div>
+    <div id="casesinfo">
+        <div id="TittlerPerfil">
+            <h3>Información gráfica de los datos</h3>
+        </div>
+    </div>
+    <div class="casedetail__div" >
+        <a href="./cases.html"><img class="casedetail__div__icon" src="./sources/back.svg"> Volver</a>
+    </div>
+    <div class="divcharts">
+        <div class="everychart" id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+        <div class="everychart" id="myChartperson" style="width:100%; max-width:600px; height:500px;"></div>
+
+    </div>
+    
+   
+    <script src="./js/datagraphic.js" type="module"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+</body>
+</html>

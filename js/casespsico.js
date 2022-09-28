@@ -9,6 +9,8 @@ const casesSection = document.getElementById("tablecases");
 const csa = document.getElementById("csa");
 const cscr = document.getElementById("cscr");
 const creation= document.getElementById("creation");
+const charts = document.getElementById("charts");
+
 
 //Verificamos que tengamos un usuario
 onAuthStateChanged(auth, (user) => {
@@ -155,7 +157,12 @@ creation.addEventListener("click" , ()=>{
 
 });
 
+//Botón de charts
+charts.addEventListener("click", ()=>{
 
+  window.open("./datagraphic.html","_self");
+
+});
 
 
 
