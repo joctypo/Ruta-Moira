@@ -442,6 +442,16 @@ p{
     :focus{
         border: 2px solid $purple-1;
     }
+
+
+}
+
+*    :disabled { 
+    border: 2px solid #747474;
+    background: $neutral-color-5;
+    color: $neutral-color-2;
+    opacity: 50%;
+    
 }
 
 ::placeholder{
@@ -795,6 +805,8 @@ p{
             display: flex;
             flex-direction: column;
            // width: 100%;
+
+         
             
         }
 
@@ -867,6 +879,9 @@ p{
         }
 
         &__row{
+            h5{
+                color: $purple-1;
+            }
             display: flex;
             flex-direction: row;
         }

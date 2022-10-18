@@ -155,6 +155,7 @@ fssa5.addEventListener("click", e=>{
 });
 
 checkanoni.addEventListener("click", e=> {
+    
 
     var checkanon = document.getElementById("checkanon").checked;
     if(checkanon){
@@ -171,21 +172,21 @@ checkanoni.addEventListener("click", e=> {
             document.getElementById("mailform").disabled = "true";
             document.getElementById("mailform").value = "Anónima";
            // document.getElementById("nameform").value("Anonimo");
-    }else{
-        document.getElementById("nameform").disabled = "false";
-       
-        document.getElementById("lastnameform").disabled = "false";
-        
-        document.getElementById("documentform").disabled = "false";
-        
-        document.getElementById("celform").disabled = "false";
-        
-        document.getElementById("addresform").disabled = "false";
-        
-        document.getElementById("mailform").disabled = "false";
-      
+    }else if(checkanon==false){
+        document.getElementById("nameform").disabled = false;
+        document.getElementById("nameform").value= '';
+        document.getElementById("lastnameform").disabled = false;
+        document.getElementById("lastnameform").value= '';
+        document.getElementById("documentform").disabled = false;
+        document.getElementById("documentform").value= '';
+        document.getElementById("celform").disabled = false;
+        document.getElementById("celform").value= '';
+        document.getElementById("addresform").disabled = false;
+        document.getElementById("addresform").value= '';
+        document.getElementById("mailform").disabled = false;
+        document.getElementById("mailform").value= '';
     }
-
+    //alert(checkanon);
 })
 
 

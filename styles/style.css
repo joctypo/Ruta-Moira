@@ -336,6 +336,13 @@ p {
   border: 2px solid #662D91;
 }
 
+* :disabled {
+  border: 2px solid #747474;
+  background: #F5F5F5;
+  color: #747474;
+  opacity: 50%;
+}
+
 ::placeholder {
   color: #FF92E8;
 }
@@ -692,6 +699,9 @@ p {
 .support__form__row {
   display: flex;
   flex-direction: row;
+}
+.support__form__row h5 {
+  color: #662D91;
 }
 .support__form__left {
   width: 40%;
