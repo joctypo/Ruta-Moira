@@ -2,7 +2,7 @@ import {db, auth} from "./firebase.js";
 import {getDoc , doc , updateDoc} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 import {onAuthStateChanged} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 //import { URLSearchParams } from "url";
-
+var useruid;
 const casesinfo = document.getElementById("casesinfo");
 const changebutton = document.getElementById("changebutton");
 const formchange = document.getElementById("formchange");

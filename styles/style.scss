@@ -47,6 +47,165 @@ body{
     margin: 0;
 }
 
+.bannermoira{
+    width: 100%;
+  }
+
+.moirapage{
+    color: $purple-1;
+
+
+    &__part1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5em 20%;
+
+        p{
+            margin-top: 2em;
+        }
+        
+    }
+
+    &__part2{
+        display: flex;
+        margin: 1em 10% 5em 10%;
+        align-items: center;
+        &__div{
+            width: 50%;
+        }
+
+        &__brand{
+            width:100%;
+        }
+
+        &__text{
+            
+            h4{
+                margin-top: 1em;
+            }
+
+            p{
+                margin-top: 1em;
+            }
+            padding: 0px 0px 0px 2em;
+            width: 50%;
+        }
+    }
+
+
+    &__part3{ 
+        display: flex;
+        margin: 1em 10% 5em 10%;
+        align-items: center;
+        &__div{
+            width: 50%;
+        }
+
+        &__image{
+            width: 100%;
+        }
+        &__text{
+            text-align: end;
+            h4{
+                margin-top: 1em;
+            }
+
+            p{
+                margin-top: 1em;
+            }
+            padding: 0px 2em 0px 0px;
+            width: 50%;
+        }
+    }
+
+    &__part4{
+        display: flex;
+        margin: 1em 10% 5em 10%;
+        align-items: center;
+        padding : 2em;
+        background-color: $primary-color-1;
+        border-radius: 16px;
+        color: $neutral-color-6;
+        &__div{
+            width: 50%;
+        }
+
+        &__brand{
+            width:100%;
+        }
+
+        &__text{
+            
+            h4{
+                margin-top: 1em;
+            }
+
+            p{
+                margin-top: 1em;
+            }
+            padding: 0px 0px 0px 2em;
+            width: 50%;
+        }
+    }
+
+    &__part5{
+        text-align: center;
+        color: $neutral-color-6;
+        margin: 5em 0em;
+        padding: 3em;
+        background-color: $purple-1;
+        &__feature{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1em;
+
+            img{
+                margin-top: 3em;
+                padding: 2em;
+            }
+        }
+
+    }
+
+    &__part6{
+        text-align: center;
+        margin-bottom: 5em;
+        font-family: $body-font;
+        color: $secondary-color-1;
+    }
+
+    &__part7{
+        text-align: center;
+        margin: 1em 10% 5em 10%;
+        h3{
+            margin-bottom: 1em;
+            color: $orange-1;
+        }
+
+        &__advertencia{
+            h5{
+                margin-top: 3em;
+                color: $orange-1;
+            }
+            
+        }
+
+        &__preguntas{
+            text-align: left;
+
+            h5{
+                margin-top: 2em;
+            }
+
+        }
+        
+    }
+
+}
 
 .banner{
     display: flex;
@@ -89,6 +248,9 @@ body{
             display: flex;
             flex-direction: column;
             padding: 0em 20% 0em 3em;
+            p{
+                margin-top: 1em;
+            }
         }
     }
 
@@ -127,9 +289,32 @@ body{
             width: 100%;
         }
     }
+
+    &__part5{
+        text-align: center;
+        color: $green-1;
+        h4{
+            margin-bottom: 2em;
+        }
+        
+        &__feature{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            //padding: 1em;
+
+            img{
+                padding: 0.5em;
+            }
+        }
+    }
 }
 #buttonbanner{
     width: 20%;
+}
+
+.learn{
+    background: $neutral-color-7;
 }
 h5{
     font-family: $subtittle-font;

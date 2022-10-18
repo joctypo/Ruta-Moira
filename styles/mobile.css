@@ -152,6 +152,48 @@
   #buttonbanner {
     width: auto;
   }
+  .moirapage__part1 {
+    margin: 24px 16px;
+  }
+  .moirapage__part2 {
+    flex-direction: column;
+    margin: 24px 16px;
+  }
+  .moirapage__part2__div {
+    width: 100%;
+  }
+  .moirapage__part2__text {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .moirapage__part3 {
+    flex-direction: column-reverse;
+    margin: 24px 16px;
+  }
+  .moirapage__part3__div {
+    width: 100%;
+  }
+  .moirapage__part3__text {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .moirapage__part4 {
+    flex-direction: column;
+    margin: 24px 16px;
+  }
+  .moirapage__part4__div {
+    width: 100%;
+  }
+  .moirapage__part4__text {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .moirapage__part6 {
+    margin: 0px 16px 3em 16px;
+  }
   .index__part1 {
     display: flex;
     flex-direction: column;

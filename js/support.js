@@ -17,6 +17,8 @@ const fssa3 = document.getElementById("fssa3");
 const fssa4 = document.getElementById("fssa4");
 const fssa5 = document.getElementById("fssa5");
 const fssa6 = document.getElementById("fssa6");
+const checkanoni = document.getElementById("checkanon");
+
 
 var name,lastname,cedula,borndate,city,celphone,addres,email,person; 
 
@@ -98,7 +100,7 @@ fssa1.addEventListener("click", e=>{
 //Verifico Celular, ciudad, correo electrónico y tipo de persona 
 fssa2.addEventListener("click", e=>{
 
-    if(supportform.celphone.value && supportform.email.value !== "" ){
+  
         if(supportform.city.value && supportform.person.value != "null"){
 
             window.scrollTo(0,0); 
@@ -108,10 +110,8 @@ fssa2.addEventListener("click", e=>{
         }else {
            alert("Hay datos que son obligatorios sin ser digitados, por favor completalos para seguir");
         }
-    }else {
-        alert("Hay datos que son obligatorios sin ser digitados, por favor completalos para seguir");  
     }
-});
+);
 
 fssa3.addEventListener("click", e=>{
    
@@ -154,6 +154,41 @@ fssa5.addEventListener("click", e=>{
 
 });
 
+checkanoni.addEventListener("click", e=> {
+
+    var checkanon = document.getElementById("checkanon").checked;
+    if(checkanon){
+            document.getElementById("nameform").disabled = "true";
+            document.getElementById("nameform").value = "Anónima";
+            document.getElementById("lastnameform").disabled = "true";
+            document.getElementById("lastnameform").value = "Anónima";
+            document.getElementById("documentform").disabled = "true";
+            document.getElementById("documentform").value = "Anónima";
+            document.getElementById("celform").disabled = "true";
+            document.getElementById("celform").value = "Anónima";
+            document.getElementById("addresform").disabled = "true";
+            document.getElementById("addresform").value = "Anónima";
+            document.getElementById("mailform").disabled = "true";
+            document.getElementById("mailform").value = "Anónima";
+           // document.getElementById("nameform").value("Anonimo");
+    }else{
+        document.getElementById("nameform").disabled = "false";
+       
+        document.getElementById("lastnameform").disabled = "false";
+        
+        document.getElementById("documentform").disabled = "false";
+        
+        document.getElementById("celform").disabled = "false";
+        
+        document.getElementById("addresform").disabled = "false";
+        
+        document.getElementById("mailform").disabled = "false";
+      
+    }
+
+})
+
+
 
 
 supportform.addEventListener("submit", e => {
@@ -165,14 +200,14 @@ supportform.addEventListener("submit", e => {
     var checkanon = document.getElementById("checkanon").checked;
 
     if( checkanon){
-        name = "Denuncia Anonima";
-        lastname = "Denuncia Anonima";
-        cedula = "Denuncia Anonima";
-        borndate = "Denuncia Anonima";
+        name = "Denuncia Anónima";
+        lastname = "Denuncia Anónima";
+        cedula = "Denuncia Anónima";
+        borndate = "Denuncia Anónima";
         city = supportform.city.value;
-        celphone = "Denuncia Anonima";
-        addres = "Denuncia Anonima";
-        email = "Denuncia Anonima";
+        celphone = "Denuncia Anónima";
+        addres = "Denuncia Anónima";
+        email = "Denuncia Anónima";
         person = supportform.person.value;
 
 
