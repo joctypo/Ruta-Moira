@@ -49,7 +49,7 @@ function rendercase(caso){
     <caption>Código</caption>
     <p>${caso.uid}</p>
     <caption>Estado</caption>
-    <p id="casesstatus">${caso.status}</p>
+    <p id="${caso.status}">${caso.status}</p>
     <caption>Observaciones</caption>
     <p>${caso.observati}</p>
     <div id="line"></div>
@@ -96,10 +96,6 @@ function rendercase(caso){
     <p>${caso.agea}</p>   
     <caption>Tipo de persona</caption>        
     <p>${caso.persona}</p>   
-    <caption>Celular</caption>        
-    <p>${caso.celphonea}</p>   
-    <caption>Correo electrónico</caption>        
-    <p>${caso.emaila}</p>   
     <caption>Observaciones</caption>        
     <p>${caso.observations}</p>   
     <caption>Fecha de los hechos</caption>        

@@ -242,8 +242,6 @@ supportform.addEventListener("submit", e => {
     const sexa = supportform.sexa.value;
     const agea = supportform.agea.value;
     const persona = supportform.persona.value;
-    const celphonea = supportform.celphonea.value;
-    const emaila = supportform.email.value;
     const observations = supportform.observations.value;
 
   
@@ -254,7 +252,7 @@ supportform.addEventListener("submit", e => {
     var place = supportform.place.value;
     var guns = supportform.guns.value;
     var factsdescription = supportform.factsdescription.value;
-    console.log(factsdate);
+    //console.log(factsdate);
 
 
 
@@ -284,8 +282,6 @@ supportform.addEventListener("submit", e => {
             sexa,
             agea,
             persona,
-            celphonea,
-            emaila,
             observations,
             factsdate,
             factshour,

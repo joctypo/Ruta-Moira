@@ -58,7 +58,8 @@ async function changedata(stado){
         status:stado
     })
 
-    alert("Se ha cambiado el estatus del caso correctamente")
+    //alert("Se ha cambiado el estatus del caso correctamente")
+    location.reload()
 }
 
 async function changeobser(stado){
@@ -69,7 +70,8 @@ async function changeobser(stado){
         observati:stado
     })
 
-    alert("Se ha cambiado la observación correctamente")
+    //alert("Se ha cambiado la observación correctamente")
+    location.reload()
 }
 
 //Actualizar en caso de que se necesite
@@ -79,6 +81,7 @@ changebutton.addEventListener("click", ()=>{
         
         changedata(formchange.statuscase.value);
 
+
     }
 
     if(formchange.observations.value !== ""){
@@ -86,7 +89,7 @@ changebutton.addEventListener("click", ()=>{
         changeobser(formchange.observations.value)
     }
 
-
+   
 
 
 
@@ -100,9 +103,9 @@ function rendercase(caso){
     casesinfo.innerHTML = `
     <div>
     <caption>Código</caption>
-    <p>${caso.uid}</p>
+    <p>${caso.id}</p>
     <caption>Estado</caption>
-    <p id="casesstatus">${caso.status}</p>
+    <p id="${caso.status}">${caso.status}</p>
     <caption>Observaciones</caption>
     <p>${caso.observati}</p>
     <div id="line"></div>
@@ -149,10 +152,6 @@ function rendercase(caso){
     <p>${caso.agea}</p>   
     <caption>Tipo de persona</caption>        
     <p>${caso.persona}</p>   
-    <caption>Celular</caption>        
-    <p>${caso.celphonea}</p>   
-    <caption>Correo electrónico</caption>        
-    <p>${caso.emaila}</p>   
     <caption>Observaciones</caption>        
     <p>${caso.observations}</p>   
     <caption>Fecha de los hechos</caption>        

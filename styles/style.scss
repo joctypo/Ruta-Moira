@@ -414,6 +414,8 @@ p{
     }
 }
 
+
+
 .formlabel{
     font-family: $body-font;
     font-weight: 500;
@@ -570,7 +572,10 @@ p{
     //background-image: url("../sources/image-login.png");
 }
 
-
+#seleccionado{
+    background: $secondary-color-2;
+    border-radius: 10px;
+}
 .nav{
     background: $neutral-color-7 ;
     top: 0;
@@ -599,7 +604,7 @@ p{
         padding: 8px 16px ;
     }
     li:hover{
-        background: $secondary-color-2;
+        background: $secondary-color-3;
         border-radius: 10px;
     }
     &_logo{
@@ -1169,4 +1174,28 @@ fieldset{
 }
 #datagraphic{
     background:$neutral-color-7;
+}
+
+#Activo{
+    padding: 0.5em 1em;
+    background: $complementary-green;
+    color: $neutral-color-6;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+#Cerrado{
+    padding: 0.5em 1em;
+    background: $primary-color-1;
+    color: $neutral-color-6;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+#Enviado{
+    padding: 0.5em 1em;
+    background: $secondary-color-1;
+    color: $neutral-color-6;
+    font-weight: 500;
+    border-radius: 8px;
 }

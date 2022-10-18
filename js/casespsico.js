@@ -58,7 +58,7 @@ function rendercases(cases){
         <caption>Tipo de violencia</caption>
         <p>${cases.violence}</p>
         <caption> Estado </caption>
-        <p id="casesstatus">${cases.status}</p>
+        <p id="${cases.status}">${cases.status}</p>
         <img src="./sources/View.svg">
         <caption> Ver </caption>
     </div>
@@ -96,7 +96,7 @@ async function loadCases(){
 //Aquí filtramos los casos del usuario  abiertos
 async function filtersAction1(){
 
-    const filterValue = "Caso Cerrado";
+    const filterValue = "Cerrado";
 
     let sortedCases = [];
 
@@ -104,7 +104,7 @@ async function filtersAction1(){
     //--------Listar por usuario------ 
     sortedCases = casesViolence.filter((everycase) => everycase.status !== filterValue);
     console.log(sortedCases);
-  
+    casesSection.innerHTML = "";
     sortedCases.forEach(item => {
       rendercases(item);
     })
@@ -116,7 +116,7 @@ async function filtersAction1(){
 //Aquí filtramos los casos del usuario cerrados
 async function filtersAction2(){
 
-  const filterValue = "Caso Cerrado";
+  const filterValue = "Cerrado";
 
   let sortedCases = [];
 
@@ -125,6 +125,7 @@ async function filtersAction2(){
   sortedCases = casesViolence.filter((everycase) => everycase.status === filterValue);
   console.log(sortedCases);
 
+  casesSection.innerHTML = "";
   sortedCases.forEach(item => {
     rendercases(item);
   })

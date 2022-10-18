@@ -49,7 +49,7 @@ function rendercases(cases){
         <caption>Tipo de violencia</caption>
         <p>${cases.violence}</p>
         <caption> Estado </caption>
-        <p id="casesstatus">${cases.status}</p>
+        <p id="${cases.status}">${cases.status}</p>
         
         <img src="./sources/View.svg">
         <caption> Ver </caption>
