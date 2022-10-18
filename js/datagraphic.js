@@ -11,8 +11,8 @@ var candelaria=0,cerrito=0,florida=0,jamundi=0,cumbre=0,pradera=0,yumbo=0;
 var estudiante=0,profesor=0,colaborador=0;
 var mujer=0,hombre=0,queer=0,otro=0,prefieron=0;
 var hetero=0,homo=0,bi=0,ase=0,panse=0,otroide=0,prefieride=0;
-var motriz=0,auditiva=0,visual=0,mental=0,cognitiva=0,ningu=0;
-var psicosi=0,psicono=0;
+//var motriz=0,auditiva=0,visual=0,mental=0,cognitiva=0,ningu=0;
+//var psicosi=0,psicono=0;
 var mujera=0,hombrera=0,otra=0;
 var estudianta=0,profesora=0,colaboradora=0,externa=0;
 var campus=0,nocampus=0,alrede=0,otrospace=0;
@@ -62,7 +62,12 @@ onAuthStateChanged(auth, (user) => {
     countidentity();
     countorientation();
     counttypepeople();
+    countsexenemy();
+    countviolence();
+    countviolenceperson();
+    countplace();
     drawChart();
+
 }
 
 
@@ -145,11 +150,99 @@ async function countidentity(){
             queer++;
         }  
         if(item.identity === "Otro"){
-            otroide++;
+            otro++;
         }  
         if(item.identity === "Prefiere no decirlo"){
-            prefieride++;
+            prefieron++;
         }  
+
+    })
+}
+
+async function countsexenemy(){
+
+    casesViolence.forEach(item =>{
+        if(item.sexa === "Mujer"){
+            mujera++;
+        }    
+        if(item.sexa === "Hombre"){
+            hombrera++;
+        }  
+     
+        if(item.sexa === "Otro"){
+            otra++;
+        }  
+    
+
+    })
+}
+
+async function countviolenceperson(){
+
+    casesViolence.forEach(item =>{
+        if(item.persona === "Estudiante"){
+            estudianta++;
+        }    
+        if(item.persona === "Colaborador/a"){
+            profesora++;
+        }  
+     
+        if(item.persona === "Profesor/a"){
+            colaboradora++;
+        }  
+
+        if(item.persona === "Alguien Externa"){
+            externa++;
+        }  
+    
+
+    })
+}
+
+async function countplace(){
+
+    casesViolence.forEach(item =>{
+        if(item.place === "Dentro del campus"){
+            campus++;
+        }    
+        if(item.place === "Fuera del campus"){
+            nocampus++;
+        }  
+     
+        if(item.place === "Alrededores del campus"){
+            alrede++;
+        }  
+
+        if(item.place === "Otro"){
+            otrospace++;
+        }  
+    
+
+    })
+}
+
+async function countviolence(){
+
+    casesViolence.forEach(item =>{
+        if(item.violence === "Violencia Física"){
+            fisica++;
+        }    
+        if(item.violence === "Violencia Sexual"){
+            sexual++;
+        }  
+     
+        if(item.violence === "Violencia Simbólica"){
+            simbolica++;
+        }  
+
+        if(item.violence === "Violencia Psicológica"){
+            psicologica++;
+        }  
+
+        if(item.violence === "Violencia Económica"){
+            patrimonial++;
+        }  
+    
 
     })
 }
@@ -159,22 +252,22 @@ async function countorientation(){
 
     casesViolence.forEach(item =>{
         if(item.orientation === "Heterosexual"){
-            mujer++;
+            hetero++;
         }    
         if(item.orientation === "Homosexual"){
-            hombre++;
+            homo++;
         }  
         if(item.orientation === "Bisexual"){
-            queer++;
+            bi++;
         }  
         if(item.orientation === "Asexual"){
-            otroide++;
+           ase++;
         }  
         if(item.orientation === "Pansexual"){
-            prefieride++;
+            panse++;
         }  
         if(item.orientation === "Otro"){
-            prefieride++;
+           otroide++;
         }  
         if(item.orientation === "Prefiere no decirlo"){
             prefieride++;
@@ -211,7 +304,7 @@ async function drawChart() {
       chart.draw(data, options);
 
 
-    var data = google.visualization.arrayToDataTable([
+    var data2 = google.visualization.arrayToDataTable([
         ['Tipo de personas víctima', 'Cantidad de personas'],
         ['Estudiantes', estudiante],
         ['Profesor/a',profesor],
@@ -227,11 +320,133 @@ async function drawChart() {
       };
       
       var chart = new google.visualization.BarChart(document.getElementById('myChartperson'));
-        chart.draw(data, options);
+        chart.draw(data2, options);
   
 
       
 
+
+    var data3 = google.visualization.arrayToDataTable([
+            ['Identidad de género víctimas', 'Cantidad de personas'],
+            ['Mujer', mujer],
+            ['Hombre',hombre],
+            ['Queer',queer],
+            ['Otro',otro],
+            ['Prefiere no decirlo',prefieron]
+         
+          ]);
+          
+          var options = {
+            colors:['#F15A24'],
+            fontName: 'Overpass',
+            fontSize: '16',
+            title:'Identidad de género víctimas'
+          };
+          
+          var chart = new google.visualization.BarChart(document.getElementById('myChartidentity'));
+            chart.draw(data3, options);    
+
+
+
+    var data = google.visualization.arrayToDataTable([
+                ['Orientación sexual víctimas', 'Cantidad de personas'],
+                ['Heterosexual', hetero],
+                ['Homosexual',homo],
+                ['Bisexual',bi],
+                ['Asexual',ase],
+                ['Pansexual',panse],
+                ['Otro',otroide],
+                ['Prefiere no decirlo',prefieride]
+             
+              ]);
+              
+              var options = {
+                colors:['#C1272D'],
+                fontName: 'Overpass',
+                fontSize: '16',
+                title:'Orientación sexual víctimas'
+              };
+              
+              var chart = new google.visualization.BarChart(document.getElementById('myChartorientation'));
+                chart.draw(data, options);    
+
+
+    var data = google.visualization.arrayToDataTable([
+                    ['Sexo Victimarios', 'Cantidad de personas'],
+                    ['Mujer', mujera],
+                    ['Hombre',hombrera],
+                    ['Otro',otra]
+                  ]);
+                  
+                  var options = {
+                    colors:['#FBB03B'],
+                    fontName: 'Overpass',
+                    fontSize: '16',
+                    title:'Sexo Victimarios'
+                  };
+                  
+                  var chart = new google.visualization.BarChart(document.getElementById('myChartsexenemy'));
+                    chart.draw(data, options);    
+
+
+
+     var data = google.visualization.arrayToDataTable([
+                        ['Tipo de Victimarios', 'Cantidad de personas'],
+                        ['Estudiantes', estudianta],
+                        ['Docentes',profesora],
+                        ['Colaboradores',colaboradora],
+                        ['Personas externas',externa]
+                      ]);
+                      
+                      var options = {
+                        colors:['#009245'],
+                        fontName: 'Overpass',
+                        fontSize: '16',
+                        title:'Tipo de Victimarios'
+                      };
+                      
+                      var chart = new google.visualization.BarChart(document.getElementById('myChartviolenceperson'));
+                        chart.draw(data, options);    
+
+
+    
+    var data = google.visualization.arrayToDataTable([
+                            ['Lugar de los hechos', 'Casos en lugar'],
+                            ['En el campus', campus],
+                            ['Fuera del campus',nocampus],
+                            ['Alrededores del campus',alrede],
+                            ['Otro espacio',otrospace]
+                          ]);
+                          
+                          var options = {
+                            colors:['#29ABE2'],
+                            fontName: 'Overpass',
+                            fontSize: '16',
+                            title:'Lugar de los hechos'
+                          };
+                          
+                          var chart = new google.visualization.BarChart(document.getElementById('myChartplace'));
+                            chart.draw(data, options);    
+    
+
+     var data = google.visualization.arrayToDataTable([
+                                ['Tipos de violencia', 'Cantidad de casos'],
+                                ['Física', fisica],
+                                ['Psicológica',psicologica],
+                                ['Simbólica',simbolica],
+                                ['Sexual',sexual],
+                                ['Económica',patrimonial]
+                              ]);
+                              
+                              var options = {
+                                colors:['#662D91'],
+                                fontName: 'Overpass',
+                                fontSize: '16',
+                                title:'Tipos de violencia'
+                              };
+                              
+                              var chart = new google.visualization.BarChart(document.getElementById('myChartviolence'));
+                                chart.draw(data, options);    
     } 
     
     
