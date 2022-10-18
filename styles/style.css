@@ -110,6 +110,17 @@ body {
   margin-bottom: 5em;
   font-family: "Overpass", sans-serif;
   color: #FF92E8;
+  margin: 2em 20% 5em;
+}
+.moirapage__part6 a {
+  background-color: #662D91;
+  padding: 1em;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 .moirapage__part7 {
   text-align: center;
@@ -996,6 +1007,153 @@ fieldset {
   color: #FFFFFF;
   font-weight: 500;
   border-radius: 8px;
+}
+
+#Tittlevbg {
+  background: #304F9D;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 16px;
+  margin: 2rem;
+}
+
+#Tittleyomesumo {
+  background: #FFDFAE;
+  color: #662D91;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 16px;
+  margin: 2rem;
+}
+
+#Tittleprotocolo {
+  background: #FBB03B;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 16px;
+  margin: 2rem;
+}
+
+#Tittleinclusividad {
+  background: #29ABE2;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 16px;
+  margin: 2rem;
+}
+
+#Tittledocentes {
+  background: #F9B9A3;
+  color: #C1272D;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 16px;
+  margin: 2rem;
+}
+
+#Tittlelegislacion {
+  background: #FFDAF7;
+  color: #662D91;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 16px;
+  margin: 2rem;
+}
+
+.vbgpage {
+  color: #662D91;
+}
+.vbgpage__part1 {
+  color: #662D91;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2em 30% 5em 30%;
+}
+.vbgpage__part1 p {
+  margin-top: 2em;
+}
+.vbgpage__part4 {
+  display: flex;
+}
+.vbgpage__part4 p {
+  margin-top: 1em;
+}
+.vbgpage__part4__sex {
+  background-color: #662D91;
+  color: #FFFFFF;
+  text-align: right;
+  padding: 4em 2em 4em 5em;
+}
+.vbgpage__part4__gen {
+  background-color: #FF92E8;
+  color: #662D91;
+  text-align: left;
+  padding: 4em 5em 4em 2em;
+}
+.vbgpage__part5 {
+  background-color: #304F9D;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3em;
+  margin-bottom: 4em;
+}
+.vbgpage__part5 h4 {
+  padding-top: 2em;
+}
+.vbgpage__part5 p {
+  margin-top: 1em;
+}
+.vbgpage__part6 {
+  background-color: #FFB9F0;
+  color: #662D91;
+  text-align: center;
+  padding: 4rem 4rem 1rem 4rem;
+  align-items: center;
+}
+.vbgpage__part6 h5 {
+  font-size: 21px;
+}
+
+.tittlesdocument {
+  text-align: center;
+}
+.tittlesdocument h4 {
+  margin-bottom: 2em;
+}
+
+.inclusive {
+  color: #662D91;
+}
+
+.yomesumo {
+  color: #662D91;
+}
+
+.legislacion {
+  color: #662D91;
+}
+.legislacion__part1 {
+  margin: 0px 10%;
+}
+.legislacion__part1 ul {
+  list-style-image: url("./sources/staricon.svg");
+}
+
+.docentes {
+  color: #662D91;
 }
 
 /*# sourceMappingURL=style.css.map */

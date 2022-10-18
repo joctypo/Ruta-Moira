@@ -230,6 +230,10 @@
     text-align: center;
     margin: 3em 0em;
   }
+  .index__part3__feature img {
+    width: 100%;
+    padding: 0em 0px 2em 0px;
+  }
   .index__part4 {
     margin-bottom: 5em;
   }
@@ -246,6 +250,30 @@
   }
   .div__button {
     flex-direction: column;
+  }
+  .vbgpage__part1 {
+    margin: 0px 16px 2em 16px;
+  }
+  .vbgpage__part4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .vbgpage__part4__sex {
+    padding: 4em 2em 4em 2em;
+    text-align: center;
+  }
+  .vbgpage__part4__gen {
+    padding: 4em 2em 4em 2em;
+    text-align: center;
+  }
+  .moirapage__part6 {
+    background-color: #662D91;
+    border-radius: 16px;
+    padding: 2em;
+  }
+  .moirapage__part6 a {
+    padding: 0px;
   }
 }
 

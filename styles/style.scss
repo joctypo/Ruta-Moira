@@ -176,6 +176,23 @@ body{
         margin-bottom: 5em;
         font-family: $body-font;
         color: $secondary-color-1;
+       // background-color: $complementary-green;
+        margin: 2em 20% 5em;
+       
+        
+        
+        a{
+            background-color: $purple-1;
+            padding: 1em;
+            border-radius: 16px;
+                text-decoration: none;
+                color: $neutral-color-6;
+                font-family: $body-font;
+                font-weight: 400;
+                font-size: 16px;
+                
+             
+        }
     }
 
     &__part7{
@@ -1198,4 +1215,170 @@ fieldset{
     color: $neutral-color-6;
     font-weight: 500;
     border-radius: 8px;
+}
+
+#Tittlevbg{
+    background: $primary-color-1;
+    color: $neutral-color-6;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 16px;
+    margin: 2rem;
+}
+
+#Tittleyomesumo{
+    background: $yellow-3;
+    color: $purple-1;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 16px;
+    margin: 2rem;
+}
+
+#Tittleprotocolo{
+    background: $yellow-1;
+    color: $neutral-color-6;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 16px;
+    margin: 2rem;
+}
+
+#Tittleinclusividad{
+    background: $blue-1;
+    color: $neutral-color-6;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 16px;
+    margin: 2rem;
+}
+
+#Tittledocentes{
+    background: $orange-3;
+    color: $red-1;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 16px;
+    margin: 2rem;
+}
+
+#Tittlelegislacion{
+    background: $secondary-color-3;
+    color: $purple-1;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 16px;
+    margin: 2rem;
+}
+
+
+.vbgpage{
+    color: $purple-1;
+    
+    &__part1{
+        color: $purple-1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 2em 30% 5em 30%;
+
+        p{
+            margin-top: 2em;
+        }
+    }
+
+    &__part4{
+        display: flex;
+        
+        p{margin-top: 1em;}
+        &__sex{
+            background-color: $purple-1;
+            color: $neutral-color-6;
+            text-align: right;
+            padding: 4em 2em 4em 5em;
+        }
+        &__gen{
+            background-color: $secondary-color-1;
+            color: $purple-1;
+            text-align: left;
+            padding: 4em 5em 4em 2em;
+        }
+
+    }
+
+    &__part5{
+        background-color: $primary-color-1;
+        color: $neutral-color-6;
+        text-align: center;
+        padding: 3em;
+        margin-bottom: 4em;
+        h4{
+            //margin-top: 3em;
+            padding-top: 2em;
+
+        }
+        p{
+            margin-top: 1em;
+        }
+        
+    }
+
+    &__part6{
+        background-color: $secondary-color-2;
+        color: $purple-1;
+        text-align: center;
+        padding: 4rem 4rem 1rem 4rem;
+        align-items: center;
+
+        h5{
+            font-size: 21px;
+        }
+    }
+
+
+}
+
+
+.tittlesdocument{
+    text-align: center;
+
+    h4{
+        margin-bottom: 2em;
+    }
+    
+}
+
+.inclusive{
+    color: $purple-1;
+}
+
+.yomesumo{
+    color: $purple-1;
+}
+
+
+.legislacion{
+    color: $purple-1;
+
+    &__part1{
+        margin: 0px 10%;
+
+        ul{
+            list-style-image: url("./sources/staricon.svg");
+
+        }
+    }
+}
+
+.docentes{
+    color: $purple-1;
 }
