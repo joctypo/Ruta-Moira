@@ -135,7 +135,8 @@
         }
 
         &__form{
-            flex-direction: column;
+            flex-direction: column-reverse;
+
             height: auto;
             margin: 0px 0px 0px 0px;
             &__left{

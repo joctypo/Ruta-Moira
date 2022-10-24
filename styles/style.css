@@ -2,6 +2,12 @@ body {
   margin: 0;
 }
 
+.text_form {
+  color: #662D91;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 .bannermoira {
   width: 100%;
 }
