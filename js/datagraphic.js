@@ -16,8 +16,7 @@ var hetero=0,homo=0,bi=0,ase=0,panse=0,otroide=0,prefieride=0;
 var mujera=0,hombrera=0,otra=0;
 var estudianta=0,profesora=0,colaboradora=0,externa=0;
 var campus=0,nocampus=0,alrede=0,otrospace=0;
-var blancarma=0,fuegarma=0,otrarma=0,noarma=0;
-var fisica=0,psicologica=0,sexual=0,simbolica=0,patrimonial=0;
+
 
 
 
@@ -63,7 +62,7 @@ onAuthStateChanged(auth, (user) => {
     countorientation();
     counttypepeople();
     countsexenemy();
-    countviolence();
+  
     countviolenceperson();
     countplace();
     drawChart();

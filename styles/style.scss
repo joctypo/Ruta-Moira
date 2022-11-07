@@ -1149,8 +1149,14 @@ fieldset{
     
 }
 
-
-
+.intern{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+#ver{
+    margin: 0px 20px;
+}
 .casos{
     &__card{
         color: $purple-1;
@@ -1161,12 +1167,13 @@ fieldset{
         padding: 1rem;
         text-align: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         font-family: $body-font;
         font-size: 15px;
         font-weight: 700;
+        
         img{
             width: 40px;
             height: 40px;

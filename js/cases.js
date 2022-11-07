@@ -44,15 +44,24 @@ function rendercases(cases){
 
     casos.innerHTML = `
     <div class = "casos__card">
-        <caption>Código caso</caption>
-        <p>${cases.id}</p>
-        <caption>Caso</caption>
-        <p>${cases.factsdescription}</p>
-        <caption> Estado </caption>
-        <p id="${cases.status}">${cases.status}</p>
-        
-        <img src="./sources/View.svg">
-        <caption> Ver </caption>
+    <div class="intern">
+    <caption>Código caso</caption>
+    <p>${cases.id}</p>
+    </div>
+    <div class="intern">
+    <caption> Hechos </caption>
+    <p>${cases.factsdescription}</p>
+    <caption> Observaciones </caption>
+    <p>${cases.observati}</p>
+    </div>
+    <div class="intern">
+    <caption> Estado </caption>
+    <p id="${cases.status}">${cases.status}</p>
+    </div>
+    <div class="intern" id="ver">
+    <caption> Ver </caption>
+    <img src="./sources/View.svg">
+    </div>
     </div>
 `;
     casesSection.appendChild(casos);

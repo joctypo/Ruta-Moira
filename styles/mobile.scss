@@ -26,7 +26,11 @@
         }
 
     }
+    .casos{
+        &__card{
+            flex-direction: column;
 
+        }}
     .nav_mobile{
         display: flex;
         flex-direction: column;

@@ -16,6 +16,9 @@
   .brand img {
     width: 100%;
   }
+  .casos__card {
+    flex-direction: column;
+  }
   .nav_mobile {
     display: flex;
     flex-direction: column;

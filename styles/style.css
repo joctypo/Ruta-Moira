@@ -943,6 +943,16 @@ fieldset {
   border-radius: 8px;
 }
 
+.intern {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+#ver {
+  margin: 0px 20px;
+}
+
 .casos__card {
   color: #662D91;
   background: #FFFFFF;
@@ -952,7 +962,7 @@ fieldset {
   padding: 1rem;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: "Overpass", sans-serif;
