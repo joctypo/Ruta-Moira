@@ -442,15 +442,20 @@ p{
 
 .formlabel{
     font-family: $body-font;
+    font-weight: 700;
+    font-size: 18px;
+    color: $purple-1;
+    margin: 2rem 0rem 0rem 0rem;
+    display: flex;
+}
+
+#captions{
+    font-family: $body-font;
     font-weight: 500;
     font-size: 16px;
-    color: $purple-1;
-    padding: 0px 3px 0px 3px;
-    background: $neutral-color-6;
-    width: fit-content;
-    z-index: 10;
-    margin: 0px 6px -16px 6px;
+    color: $red-1;
 }
+
 
 .forminput{
     background: #FFFFFF;
@@ -463,10 +468,15 @@ p{
     font-weight: 400;
     font-size: 16px;
     margin: 5px 0px;
-    
+    display: flex;
+   // flex-direction: column;
+    width: calc(100% - 30px);
 
-    :focus{
-        border: 2px solid $purple-1;
+    #selections{
+        width: 100%;
+    }
+    :active{
+        color: $purple-1;
     }
 
 
@@ -481,7 +491,7 @@ p{
 }
 
 ::placeholder{
-    color: $secondary-color-1;
+    color: $secondary-color-2;
     
 }
 
@@ -599,6 +609,18 @@ p{
 #seleccionado{
     background: $secondary-color-2;
     border-radius: 10px;
+}
+
+.progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.progressbarfinal{
+    width: 50%;
 }
 .nav{
     background: $neutral-color-7 ;
@@ -856,7 +878,7 @@ p{
 
         &__right{
             width: 50%;
-            padding: 3em 4em 2em 1em;
+            padding: 2em 4em 2em 4em;
             color: $purple-1;
             display: flex;
             flex-direction: column;
@@ -871,25 +893,27 @@ p{
 
 
     }
-
+    
     &__form{
-
-
-
-        background: $neutral-color-6;
-        border: 0px;
-        box-shadow: $box-shadow;
-        box-sizing: border-box;
         display: flex;
-        flex-direction: row;
-        border-radius: 16px;
-        margin: 2rem 10%;
-        height: 100vh;
-        font-family: $body-font;
-       // margin: 16px 0px 16px 0px;
-        //align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $secondary-color-3;
+        border: 0px;
+        &__left{
+            margin: 3rem 10% 0.5rem 10%;
+            background: $secondary-color-3;
+            border-radius: 16px 16px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $purple-3;
+        }
+
         &__brand{
-            width: 50%;
+            width: 100%;
+            border-radius: 16px 16px 0px 0px;
             margin-bottom: 2rem;
         }
 
@@ -897,42 +921,39 @@ p{
             display: flex;
             justify-content: center;
         }
-        &__div{
-            display: flex;
-            
-            flex-direction: column;
-            align-content: flex-start;
-            width: 100%;
-            padding: 0.3rem;
-           
-        }
-
-        &__row{
-            h5{
-                color: $purple-1;
-            }
-            display: flex;
-            flex-direction: row;
-        }
-
-        &__left{
-            width: 40%;
-            background: $purple-1;
-            border-radius: 16px 0px 0px 16px;
-            padding: 3em 2em 2em 2em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: $neutral-color-6;
-            
-        }
 
         &__right{
-            width: 60%;
-            padding: 3em 6em 2em 1em;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+
+            background: $neutral-color-6;
+            border: 0px;
+            box-shadow: $box-shadow;
+            padding: 20px 30px;
+            box-sizing: border-box;
+
+            border-radius: 16px;
+            margin: 0rem 10% 5em 10%;
+            
+            div{
+                width: 100%;
+            }
+            h5{
+                font-weight: 700;
+                color: $purple-1;
+                font-size: 24px;
+            }
+
+            p{
+                color: $purple-1;
+                font-size: 20px;
+            }
+
+            #captionsform{
+                font-size: 15px;
+                font-weight: 500;
+
+            }
+
+
         }
 
         &__check{
@@ -944,39 +965,6 @@ p{
             
         }
 
-        &__tracking{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            &__round1{
-                background: $secondary-color-1;
-                border-radius: 100%;
-                height: 16px;
-                width: 16px;
-                margin: 0px 8px 1.5em 8px;
-            }
-            &__round2{
-                background: $secondary-color-3;
-                border-radius: 100%;
-                height: 16px;
-                width: 16px;
-                margin: 0px 8px 1.5em  8px;
-            }
-            &__round3{
-                background: $secondary-color-3;
-                border-radius: 100%;
-                height: 16px;
-                width: 16px;
-                margin: 0px 8px 1.5em  8px;
-            }
-            &__round4{
-                background: $secondary-color-3;
-                border-radius: 100%;
-                height: 16px;
-                width: 16px;
-                margin: 0px 8px 1.5em 8px;
-            }
-        }
 
         &__button{
             display: flex;

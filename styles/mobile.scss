@@ -116,7 +116,9 @@
         }
     }
     
-    
+    .progressbarfinal{
+        width: 117%;
+    }
     .support{
         &__form1{
 
@@ -125,6 +127,10 @@
             &__left{
                 width: 100%;
                 border-radius: 16px 16px 0px 0px;
+
+                img{
+                    width: 80%;
+                }
             }
 
             &__right{
@@ -135,29 +141,21 @@
         }
 
         &__form{
-            flex-direction: column-reverse;
-
-            height: auto;
+            &__brand{
+                border-radius: 16px;
+            }
             margin: 0px 0px 0px 0px;
             &__left{
                 width: auto;
                 border-radius: 0px 0px 0px 0px;
+                margin: 16px;
             }
 
             &__right{
                 width: auto;
                 padding: 3em 16px 2em 16px;
-            }
-
-            &__row{
-                flex-direction: column;
-                width: auto;
-            }
-
-            &__div{
-                width: auto;
-                padding: 0.3rem 0rem;
-
+                margin: 0%;
+                border-radius: 0px;
             }
 
             &__button{

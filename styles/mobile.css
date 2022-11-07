@@ -86,6 +86,9 @@
   .footer__part3 {
     width: 100%;
   }
+  .progressbarfinal {
+    width: 117%;
+  }
   .support__form1 {
     flex-direction: column;
   }
@@ -93,30 +96,29 @@
     width: 100%;
     border-radius: 16px 16px 0px 0px;
   }
+  .support__form1__left img {
+    width: 80%;
+  }
   .support__form1__right {
     width: auto;
     padding: 3em 1em 2em 1em;
   }
   .support__form {
-    flex-direction: column-reverse;
-    height: auto;
     margin: 0px 0px 0px 0px;
+  }
+  .support__form__brand {
+    border-radius: 16px;
   }
   .support__form__left {
     width: auto;
     border-radius: 0px 0px 0px 0px;
+    margin: 16px;
   }
   .support__form__right {
     width: auto;
     padding: 3em 16px 2em 16px;
-  }
-  .support__form__row {
-    flex-direction: column;
-    width: auto;
-  }
-  .support__form__div {
-    width: auto;
-    padding: 0.3rem 0rem;
+    margin: 0%;
+    border-radius: 0px;
   }
   .support__form__button {
     flex-direction: column-reverse;

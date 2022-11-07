@@ -327,14 +327,18 @@ p {
 
 .formlabel {
   font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #662D91;
+  margin: 2rem 0rem 0rem 0rem;
+  display: flex;
+}
+
+#captions {
+  font-family: "Overpass", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #662D91;
-  padding: 0px 3px 0px 3px;
-  background: #FFFFFF;
-  width: fit-content;
-  z-index: 10;
-  margin: 0px 6px -16px 6px;
+  color: #C1272D;
 }
 
 .forminput {
@@ -348,9 +352,14 @@ p {
   font-weight: 400;
   font-size: 16px;
   margin: 5px 0px;
+  display: flex;
+  width: calc(100% - 30px);
 }
-.forminput :focus {
-  border: 2px solid #662D91;
+.forminput #selections {
+  width: 100%;
+}
+.forminput :active {
+  color: #662D91;
 }
 
 * :disabled {
@@ -361,7 +370,7 @@ p {
 }
 
 ::placeholder {
-  color: #FF92E8;
+  color: #FFB9F0;
 }
 
 .button-1 {
@@ -471,6 +480,16 @@ p {
 #seleccionado {
   background: #FFB9F0;
   border-radius: 10px;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressbarfinal {
+  width: 50%;
 }
 
 .nav {
@@ -682,7 +701,7 @@ p {
 }
 .support__form1__right {
   width: 50%;
-  padding: 3em 4em 2em 1em;
+  padding: 2em 4em 2em 4em;
   color: #662D91;
   display: flex;
   flex-direction: column;
@@ -692,94 +711,61 @@ p {
   margin-top: 2rem;
 }
 .support__form {
-  background: #FFFFFF;
-  border: 0px;
-  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
-  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  border-radius: 16px;
-  margin: 2rem 10%;
-  height: 100vh;
-  font-family: "Overpass", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFDAF7;
+  border: 0px;
+}
+.support__form__left {
+  margin: 3rem 10% 0.5rem 10%;
+  background: #FFDAF7;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #CF8EFF;
 }
 .support__form__brand {
-  width: 50%;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
   margin-bottom: 2rem;
 }
 .support__form__divbrand {
   display: flex;
   justify-content: center;
 }
-.support__form__div {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  width: 100%;
-  padding: 0.3rem;
-}
-.support__form__row {
-  display: flex;
-  flex-direction: row;
-}
-.support__form__row h5 {
-  color: #662D91;
-}
-.support__form__left {
-  width: 40%;
-  background: #662D91;
-  border-radius: 16px 0px 0px 16px;
-  padding: 3em 2em 2em 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #FFFFFF;
-}
 .support__form__right {
-  width: 60%;
-  padding: 3em 6em 2em 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background: #FFFFFF;
+  border: 0px;
+  box-shadow: 0 0.5rem 1rem rgba(255, 146, 232, 0.15);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin: 0rem 10% 5em 10%;
+}
+.support__form__right div {
+  width: 100%;
+}
+.support__form__right h5 {
+  font-weight: 700;
+  color: #662D91;
+  font-size: 24px;
+}
+.support__form__right p {
+  color: #662D91;
+  font-size: 20px;
+}
+.support__form__right #captionsform {
+  font-size: 15px;
+  font-weight: 500;
 }
 .support__form__check {
   display: flex;
   flex-direction: row;
   color: #662D91;
   align-items: center;
-}
-.support__form__tracking {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.support__form__tracking__round1 {
-  background: #FF92E8;
-  border-radius: 100%;
-  height: 16px;
-  width: 16px;
-  margin: 0px 8px 1.5em 8px;
-}
-.support__form__tracking__round2 {
-  background: #FFDAF7;
-  border-radius: 100%;
-  height: 16px;
-  width: 16px;
-  margin: 0px 8px 1.5em 8px;
-}
-.support__form__tracking__round3 {
-  background: #FFDAF7;
-  border-radius: 100%;
-  height: 16px;
-  width: 16px;
-  margin: 0px 8px 1.5em 8px;
-}
-.support__form__tracking__round4 {
-  background: #FFDAF7;
-  border-radius: 100%;
-  height: 16px;
-  width: 16px;
-  margin: 0px 8px 1.5em 8px;
 }
 .support__form__button {
   display: flex;
