@@ -54,56 +54,40 @@ function rendercase(caso){
     <p>${caso.observati}</p>
     <div id="line"></div>
     <h5>Datos Generales</h5>
-    <caption>Nombres</caption>        
-    <p>${caso.name}</p>   
-    <caption>Apellidos</caption>        
-    <p>${caso.lastname}</p>   
-    <caption>Documento de identidad</caption>        
-    <p>${caso.cedula}</p>   
-    <caption>Fecha de nacimiento</caption>        
-    <p>${caso.borndate}</p>   
+    <caption>Nombre y Apellido</caption>        
+    <p>${caso.name}</p>    
+    <caption>Edad</caption>        
+    <p>${caso.edad}</p>   
     <caption>Celular</caption>        
-    <p>${caso.celphone}</p>   
-    <caption>Dirección de residencia</caption>        
-    <p>${caso.addres}</p>   
+    <p>${caso.celphone}</p>     
     <caption>Correo electrónico</caption>        
     <p>${caso.email}</p>   
-    <caption>Tipo de persona</caption>        
+    <caption>Rol institucional</caption>        
     <p>${caso.person}</p>   
     <caption>Identidad de género</caption>        
     <p>${caso.identity}</p>   
     <caption>Orientación sexual</caption>        
     <p>${caso.orientation}</p>   
     <caption>Pronombre de preferencia</caption>        
-    <p>${caso.pronouns}</p>   
-    <caption>Apodo o nombre de preferencia</caption>        
-    <p>${caso.nickname}</p>   
+    <p>${caso.pronouns}</p>    
     <caption>Medio por el que desea ser contactadx</caption>        
-    <p>${caso.contact}</p>   
-    <caption>Diversidad Funcional</caption>        
-    <p>${caso.diversity}</p>   
+    <p>${caso.contact}</p>     
     <caption>Desea asistencia por psicólogo</caption>        
     <p>${caso.helppsico}</p>   
 
-    <h5>Agresor y hechos</h5>
-    <caption>Nombres</caption>        
-    <p>${caso.namea}</p>   
-    <caption>Apellidos</caption>        
-    <p>${caso.lastnamea}</p>   
-    <caption>Sexo</caption>        
+    <h5>Implicado(a) y hechos</h5>
+    <caption>Nombres y Apellido Implicado(a)</caption>        
+    <p>${caso.namea}</p>    
+    <caption>Identidad de Género Implicado(a)</caption>        
     <p>${caso.sexa}</p>   
-    <caption>Edad aproximada</caption>        
-    <p>${caso.agea}</p>   
-    <caption>Tipo de persona</caption>        
+    <caption>Rol Institucional</caption>        
     <p>${caso.persona}</p>   
     <caption>Observaciones</caption>        
     <p>${caso.observations}</p>   
     <caption>Fecha de los hechos</caption>        
     <p>${caso.factsdate}</p>   
-    <caption>Hora de los hechos</caption>        
-    <p>${caso.factshour}</p>   
-    <caption>Tipo de violencia</caption>        
-    <p>${caso.violence}</p>   
+    <caption>Fecha final de los hechos</caption>        
+    <p>${caso.factsend}</p>   
     <caption>Lugar de los hechos</caption>        
     <p>${caso.place}</p>   
     <caption>Detalles del caso y hechos</caption>        
@@ -112,10 +96,4 @@ function rendercase(caso){
 </div>
    
     `
-
-
-
-
-
-
 }

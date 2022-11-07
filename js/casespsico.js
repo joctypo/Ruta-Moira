@@ -55,8 +55,8 @@ function rendercases(cases){
     <div class = "casos__card">
         <caption>Código caso</caption>
         <p>${cases.id}</p>
-        <caption>Tipo de violencia</caption>
-        <p>${cases.violence}</p>
+        <caption>Caso y hechos</caption>
+        <p>${cases.factsdescription}</p>
         <caption> Estado </caption>
         <p id="${cases.status}">${cases.status}</p>
         <img src="./sources/View.svg">

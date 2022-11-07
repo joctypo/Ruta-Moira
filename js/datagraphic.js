@@ -221,31 +221,6 @@ async function countplace(){
     })
 }
 
-async function countviolence(){
-
-    casesViolence.forEach(item =>{
-        if(item.violence === "Violencia Física"){
-            fisica++;
-        }    
-        if(item.violence === "Violencia Sexual"){
-            sexual++;
-        }  
-     
-        if(item.violence === "Violencia Simbólica"){
-            simbolica++;
-        }  
-
-        if(item.violence === "Violencia Psicológica"){
-            psicologica++;
-        }  
-
-        if(item.violence === "Violencia Económica"){
-            patrimonial++;
-        }  
-    
-
-    })
-}
 
 //Contador de orientación
 async function countorientation(){
@@ -372,7 +347,7 @@ async function drawChart() {
 
 
     var data = google.visualization.arrayToDataTable([
-                    ['Sexo Victimarios', 'Cantidad de personas'],
+                    ['Sexo Implicados', 'Cantidad de personas'],
                     ['Mujer', mujera],
                     ['Hombre',hombrera],
                     ['Otro',otra]
@@ -391,7 +366,7 @@ async function drawChart() {
 
 
      var data = google.visualization.arrayToDataTable([
-                        ['Tipo de Victimarios', 'Cantidad de personas'],
+                        ['Tipo de implicados', 'Cantidad de personas'],
                         ['Estudiantes', estudianta],
                         ['Docentes',profesora],
                         ['Colaboradores',colaboradora],
@@ -428,25 +403,6 @@ async function drawChart() {
                           var chart = new google.visualization.BarChart(document.getElementById('myChartplace'));
                             chart.draw(data, options);    
     
-
-     var data = google.visualization.arrayToDataTable([
-                                ['Tipos de violencia', 'Cantidad de casos'],
-                                ['Física', fisica],
-                                ['Psicológica',psicologica],
-                                ['Simbólica',simbolica],
-                                ['Sexual',sexual],
-                                ['Económica',patrimonial]
-                              ]);
-                              
-                              var options = {
-                                colors:['#662D91'],
-                                fontName: 'Overpass',
-                                fontSize: '16',
-                                title:'Tipos de violencia'
-                              };
-                              
-                              var chart = new google.visualization.BarChart(document.getElementById('myChartviolence'));
-                                chart.draw(data, options);    
     } 
     
     
