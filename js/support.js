@@ -37,7 +37,7 @@ onAuthStateChanged(auth, (user) => {
 
 //Creation of case
 const createcase = async (userFields) => {
-   
+    console.log(userFields);
     try {
         
         await addDoc(collection(db,"cases"), userFields);
@@ -160,7 +160,7 @@ checkanoni.addEventListener("click", e=> {
 
 supportform.addEventListener("submit", e => {
     e.preventDefault();
-
+    alert(uid)
     //Part 1 Form
     var factsdescription = supportform.factsdescription.value;
     var place = supportform.place.value;
@@ -178,7 +178,7 @@ supportform.addEventListener("submit", e => {
     //Verificamos si es anónima la denuncia para no guardar ciertos datos
     var checkanon = document.getElementById("checkanon").checked;
 
-    if( checkanon){
+    if(checkanon){
         name = "Denuncia Anónima";
         city = supportform.city.value;
         celphone = "Denuncia Anónima";
@@ -196,11 +196,10 @@ supportform.addEventListener("submit", e => {
     const orientation = supportform.orientation.value;
     const contact = supportform.contact.value;
     const helppsico = supportform.helppsico.value;
-    const edad = supportform.borndate;
-    const pronouns  = supportform.pronouns;
-
-
-    if (name && email && person) {
+    const edad = supportform.borndate.value;
+    const pronouns  = supportform.pronouns.value;
+   
+    if (name) {
         //alert("subiendo caso");
 
         createcase({
@@ -228,6 +227,7 @@ supportform.addEventListener("submit", e => {
             status:"Enviado",
             observati: "Pronto estaremos en contacto, te pedimos paciencia, estamos procesando tu solicitud",
         });
+
     }else{
         alert("No se pudo enviar");
     }
@@ -235,7 +235,7 @@ supportform.addEventListener("submit", e => {
 });
 
 
-fssa5.addEventListener("click", ()=> {
+/*fssa5.addEventListener("click", ()=> {
     fssa5.disabled = true;
     
     setTimeout(() => {
@@ -243,4 +243,4 @@ fssa5.addEventListener("click", ()=> {
       
     }, 3000);
 
-});
+});*/

@@ -58,6 +58,10 @@ body{
     width: 100%;
   }
 
+  #textbanner{
+    padding: 1em 5rem 0 5rem;
+    width: 60%;
+  }
 .moirapage{
     color: $purple-1;
 
@@ -1068,6 +1072,7 @@ fieldset{
     flex-wrap: wrap;
     padding: 1em;
     justify-content: center;
+    flex-direction: column;
     a{
         text-decoration: none; 
         

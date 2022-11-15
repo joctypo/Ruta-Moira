@@ -150,6 +150,9 @@
   }
   .banner h3 {
     margin: 4rem 0rem 1rem 0rem;
+    font-family: "Overpass", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
   }
   .banner img {
     width: 70%;
