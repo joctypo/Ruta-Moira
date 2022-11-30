@@ -160,7 +160,7 @@ checkanoni.addEventListener("click", e=> {
 
 supportform.addEventListener("submit", e => {
     e.preventDefault();
-    alert(uid)
+    
     //Part 1 Form
     var factsdescription = supportform.factsdescription.value;
     var place = supportform.place.value;
